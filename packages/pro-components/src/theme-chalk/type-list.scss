@@ -1,0 +1,88 @@
+@use './base.scss' as *;
+
+@include b('type-list') {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--el-color-white);
+    border-radius: 5px;
+    height: 100%;
+
+    @include e('header') {
+        display: flex;
+        position: relative;
+        padding: 15px;
+        box-sizing: border-box;
+        border-bottom: 1px solid var(--el-border-color);
+    }
+
+    @include e('scroll-wrap') {
+        flex: 1;
+    }
+
+    @include e('empty') {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include e('footer') {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        border-top: 1px solid var(--el-border-color);
+    }
+}
+
+@include b('type-list-item') {
+    width: 100%;
+    position: relative;
+    padding: 10px 0 10px 15px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+
+    &__icon {
+        margin-right: 6px;
+    }
+
+    &__content {
+        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+
+        .el-icon:hover {
+            color: var(--el-color-primary);
+        }
+    }
+
+    &:hover {
+        background: var(--el-color-primary-light-9);
+    }
+
+    @include when('active') {
+        background-color: var(--el-color-primary-light-9);
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            bottom: 5px;
+            width: 3px;
+            background-color: var(--el-color-primary);
+            border-radius: 3px;
+        }
+    }
+}

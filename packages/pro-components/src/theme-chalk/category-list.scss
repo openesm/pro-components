@@ -1,0 +1,107 @@
+@use './base.scss' as *;
+
+@include b('category-list') {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--el-color-white);
+    border-radius: 5px;
+    height: 100%;
+    user-select: none;
+
+    @include e('header') {
+        display: flex;
+        position: relative;
+        padding: 15px;
+        box-sizing: border-box;
+
+        &--border {
+            border-bottom: 1px solid var(--el-border-color);
+        }
+    }
+
+    @include e('body') {
+        flex: 1;
+        overflow: hidden;
+    }
+
+    @include e('empty') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    @include e('footer') {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+
+        &--border {
+            border-top: 1px solid var(--el-border-color);
+        }
+    }
+
+    // 数据为空状态
+    &.is-empty &__body > .el-scrollbar__wrap > .el-scrollbar__view {
+        height: 100%;
+    }
+}
+
+@include b('category-list-item') {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+    &--default {
+        padding: 10px 0 10px 15px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    &__icon {
+        margin-right: 6px;
+    }
+
+    &__content {
+        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__desc {
+        color: #999;
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+
+        .el-icon:hover {
+            color: var(--el-color-primary);
+        }
+    }
+
+    &:hover,
+    &.is-active {
+        background: rgba(0, 0, 0, 0.028);
+    }
+
+    &.is-active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        bottom: 5px;
+        width: 3px;
+        background-color: var(--el-color-primary);
+        border-radius: 3px;
+    }
+}

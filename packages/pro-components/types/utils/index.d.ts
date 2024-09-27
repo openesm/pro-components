@@ -1,0 +1,21 @@
+import * as dt from './dt';
+import * as format from './format';
+export * from './install';
+export * from './is';
+export * from './error';
+export * from './file';
+declare const _default: {
+    dt: typeof dt;
+    format: typeof format;
+    type(val: unknown, type: string): boolean;
+    isNumber(val: unknown): val is number;
+    isBoolean(val: unknown): val is boolean;
+    isUndefined(val: unknown): val is undefined;
+    isRegExp(val: unknown): val is RegExp;
+    isFunction(val: unknown): val is Function;
+    isObject(val: unknown): val is Record<any, any>;
+    isArray(val: unknown): val is any[];
+    isString: (val: unknown) => val is string;
+    isHTMLTag: (val: string) => boolean;
+};
+export default _default;

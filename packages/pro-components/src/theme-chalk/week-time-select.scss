@@ -1,0 +1,48 @@
+
+@use './base.scss' as *;
+
+@include b('week-time-select') {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--el-border-color);
+
+    .el-form-item {
+        margin-bottom: 18px;
+    }
+
+    .el-form-item .el-form-item {
+        margin-bottom: 0;
+    }
+
+    &__time-item .el-icon {
+        transition: color .3s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--el-color-primary);
+        }
+    }
+
+    // &__time-item-error {
+    //     font-size: 13px;
+    //     color: var(--el-color-danger);
+    // }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: color .3s ease;
+
+        &:hover {
+            color: var(--el-color-primary);
+        }
+    }
+
+}

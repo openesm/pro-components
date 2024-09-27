@@ -1,0 +1,69 @@
+@use './config' as *;
+
+// .sd-link { ==> sd-link
+@function selectorToString($selector) {
+    $selector: inspect($selector);  // 返回 $value 的字符串表示形式
+    $selector: str-slice($selector, 2, -2);
+    @return $selector;
+}
+
+// 含有修饰符的选择器
+@function containsModifier($selector) {
+    $selector: selectorToString(($selector));
+
+    @if str-index($selector, $modifier-separator) {
+        @return true;
+    } @else {
+        @return false;
+    }
+}
+
+// 含有状态的选择器
+@function containWhenFlag($selector) {
+    $selector: selectorToString($selector);
+
+    @if str-index($selector, '.' + $state-prefix) {
+        @return true;
+    } @else {
+        @return false;
+    }
+}
+
+// 含有伪元素或伪选择器
+@function containPseudoClass($selector) {
+    $selector: selectorToString($selector);
+
+    @if str-index($selector, ':') {
+        @return true;
+    } @else {
+        @return false;
+    }
+}
+
+// 特殊嵌套的规则
+@function hitAllSpecialNestRule($selector) {
+    @return containsModifier($selector) or containWhenFlag($selector) or containPseudoClass($selector);
+}
+
+
+// 链接 css 变量明
+// joinVarName('button', 'text-color') ==> --sd-button-text-color
+@function joinVarName($list) {
+    $name: '--' + $namespace;
+    @each $item in $list {
+        @if $item != '' {
+            $name: $name + '-' + $item;
+        }
+    }
+    @return $name;
+}
+
+
+@function getCssVarName($args...) {
+    @return joinVarName($args);
+}
+
+@function getCssVar($args...) {
+    @return var(#{joinVarName($args)})
+}
+

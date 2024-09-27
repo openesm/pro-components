@@ -1,0 +1,12 @@
+@use './base.scss' as *;
+
+@include b(image) {
+    .el-image__placeholder,
+    .el-image__error {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

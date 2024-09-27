@@ -1,0 +1,67 @@
+@use './base.scss' as *;
+
+@include b('drawer') {
+    .el-drawer__body {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    @include e('close') {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f6f6f6;
+        }
+    }
+
+    @include e('header') {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 54px;
+        padding: 0 15px;
+        margin-bottom: 0;
+        border-bottom: 1px solid var(--el-border-color-lighter);
+
+        &.has-close {
+            padding-right: 72px;
+        }
+
+        &-title {
+            flex: 1;
+            // font-size: 16px;
+        }
+    }
+
+    @include e('body') {
+        padding: 15px;
+        box-sizing: border-box;
+
+        @include when('lock') {
+            flex: 1;
+            overflow: hidden;
+            height: 0;
+        }
+    }
+
+    @include e('footer') {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        border-top: 1px solid var(--el-border-color-lighter);
+
+        .el-button {
+            min-width: 90px;
+        }
+    }
+}

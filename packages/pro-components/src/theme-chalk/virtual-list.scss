@@ -1,0 +1,17 @@
+.sd-virtual-list {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    flex: 1 1 auto;
+
+    &__content {
+        position: relative;
+    }
+
+    &__item {
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+}

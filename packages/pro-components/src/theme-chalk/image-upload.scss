@@ -1,0 +1,113 @@
+@use './base.scss' as *;
+
+// 重置 el-upload 样式
+.sd-image-upload {
+    // el-upload 默认展示
+    .el-upload--text {
+        border: 1px dashed var(--el-border-color);
+        border-radius: 6px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            border-color: var(--el-color-primary);
+        }
+
+        &.is-drag {
+            border: none;
+            display: inline-flex;
+        }
+    }
+
+    &.is-disabled {
+        .el-upload--text,
+        .el-upload-dragger {
+            background-color: var(--el-fill-color-lighter);
+
+            &:hover {
+                border-color: var(--el-border-color);
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    // &--circle .el-upload {
+    //     border-radius: 50%;
+    // }
+
+    // el-upload 拖拽模式
+    .el-upload-dragger {
+        padding: 0;
+        box-sizing: border-box;
+
+        &.is-dragover {
+            padding: 0;
+            border: 1px dashed var(--el-color-primary);
+        }
+    }
+}
+
+// 未上传图片占位显示
+.sd-image-upload__placeholder {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8c939d;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+}
+
+// 进度条
+.sd-image-upload__progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+// 预览区域
+.sd-image-upload__preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &-actions {
+        transition: all .3s ease;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--el-overlay-color-lighter);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        opacity: 0;
+
+        .el-icon:hover {
+            color: var(--el-color-primary);
+        }
+    }
+
+    &:hover &-actions {
+        opacity: 1;
+    }
+}
+
+// 上传提示
+.sd-image-upload__tip {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    line-height: 1.6;
+    font-size: 13px;
+    color: var(--el-text-color-placeholder);
+}

@@ -1,0 +1,10 @@
+export declare function type(val: unknown, type: string): boolean;
+export declare const isString: (val: unknown) => val is string;
+export declare function isNumber(val: unknown): val is number;
+export declare function isBoolean(val: unknown): val is boolean;
+export declare function isUndefined(val: unknown): val is undefined;
+export declare function isRegExp(val: unknown): val is RegExp;
+export declare function isFunction(val: unknown): val is Function;
+export declare function isObject(val: unknown): val is Record<any, any>;
+export declare function isArray(val: unknown): val is Array<any>;
+export declare const isHTMLTag: (val: string) => boolean;

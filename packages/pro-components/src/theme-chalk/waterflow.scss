@@ -1,0 +1,85 @@
+@use './base.scss' as *;
+
+.sd-waterflow {
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+
+    &__col-wrap {
+        flex: 1;
+
+        .sd-waterflow__img-wrap + .sd-waterflow__img-wrap {
+            margin-top: 10px;
+        }
+    }
+
+    &__col-wrap + &__col-wrap {
+        margin-left: 10px;
+    }
+
+    &__img-wrap  {
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: box-shadow .3s ease;
+
+        > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-title {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            right: 0;
+            padding: 6px 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 10;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #fff;
+            transition: top .3s ease;
+        }
+
+        &-action {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            transition: bottom .3s ease;
+            padding: 10px;
+            box-sizing: border-box;
+
+            .el-button {
+                width: 100%;
+            }
+        }
+
+        &:hover {
+            box-shadow: var(--el-box-shadow-dark);
+        }
+
+        &:hover &-title {
+            top: 0;
+        }
+
+        &:hover &-action {
+            bottom: 0;
+        }
+    }
+
+    &__loading,
+    &__nomore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 30px;
+        color: var(--el-text-color-regular);
+
+        .el-icon {
+            margin-right: 4px;
+        }
+    }
+}

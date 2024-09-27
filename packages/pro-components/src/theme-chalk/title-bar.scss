@@ -1,0 +1,79 @@
+@use './base.scss' as *;
+
+@include b(title-bar) {
+    --sd-title-bar-header-height: 30px;
+    --sd-title-bar-header-padding-left: 15px;
+    --sd-title-bar-font-size: var(--el-font-size-base);
+    --sd-title-bar-subtitle-font-size: var(--el-font-size-extra-small);
+    --sd-title-bar-subtitle-text-color: var(--el-text-color-regular);
+    --sd-title-bar-desc-text-color: var(--el-text-color-secondary);
+    --sd-title-bar-desc-font-size: var(--el-font-size-extra-small);
+    --sd-title-bar-line-background-color: var(--el-color-primary);
+    --sd-title-bar-body-padding: 10px 15px;
+
+    @include e(head) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: var(--sd-title-bar-header-height);
+        padding-left: var(--sd-title-bar-header-padding-left);
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 15%;
+            bottom: 15%;
+            width: 3px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        &-content {
+            flex: 1;
+            overflow: hidden;
+            @include utils-ellipsis;
+        }
+
+        [class*='el-icon'] + &-content {
+            margin-left: 5px;
+        }
+
+        &-title {
+            font-size: var(--sd-title-bar-font-size);
+        }
+
+        &-subtitle {
+            margin-left: 10px;
+            font-size: var(--sd-title-bar-subtitle-font-size);
+            color: var( --sd-title-bar-subtitle-text-color);
+        }
+
+        &-desc {
+            font-size: var(--sd-title-bar-desc-font-size);
+            color: var(--sd-title-bar-desc-text-color);
+        }
+
+        &-desc + [class*='el-icon'] {
+            margin-left: 5px;
+        }
+
+        @include when(arrow) {
+            cursor: pointer;
+        }
+
+        @each $type in success info warning danger primary {
+            &.#{$namespace}-title-bar__head--#{$type} {
+                --sd-title-bar-line-background-color: var(--el-color-#{$type});
+                &::before {
+                    background-color: var(--sd-title-bar-line-background-color);
+                }
+            }
+        }
+
+    }
+
+    @include e(body) {
+        padding: var(--sd-title-bar-body-padding);
+        box-sizing: border-box;
+    }
+}

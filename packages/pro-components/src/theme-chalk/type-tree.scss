@@ -1,0 +1,51 @@
+@use './base.scss' as *;
+
+@include b('type-tree') {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--el-color-white);
+    border-radius: 5px;
+    height: 100%;
+
+    @include e('head') {
+        position: relative;
+        padding: 15px;
+        box-sizing: border-box;
+        border-bottom: 1px solid var(--el-border-color);
+    }
+
+    @include e('body') {
+        flex: 1;
+
+        .el-tree-node__content {
+            position: relative;
+            height: auto;
+        }
+
+        .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            bottom: 5px;
+            width: 3px;
+            background-color: var(--el-color-primary);
+            border-radius: 3px;
+        }
+    }
+
+    @include e('empty') {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include e('foot') {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        border-top: 1px solid var(--el-border-color);
+    }
+}

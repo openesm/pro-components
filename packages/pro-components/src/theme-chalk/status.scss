@@ -1,0 +1,39 @@
+@use './base.scss' as *;
+
+@include b(status) {
+    --sd-status-font-size: var(--el-font-size-base);
+    --sd-status-text-color: var(--el-text-color-primary);
+    --sd-status-dot-size: 8px;
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: var(--sd-status-font-size);
+    color: var(--sd-status-text-color);
+
+    &::before {
+        content: '';
+        width: var(--sd-status-dot-size);
+        height: var(--sd-status-dot-size);
+        border-radius: 50%;
+        margin-right: 5px;
+        background-color: var(--sd-status-dot-bg-color);
+    }
+
+    @each $type in success info warning danger primary {
+        &.#{$namespace}-status--#{$type} {
+            --sd-status-dot-bg-color: var(--el-color-#{$type});
+
+            &::before {
+                background-color: var(--sd-status-dot-bg-color);
+            }
+        }
+    }
+}

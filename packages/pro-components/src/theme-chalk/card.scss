@@ -1,0 +1,180 @@
+@use './base.scss' as *;
+@use 'sass:math';
+
+@include b(card) {
+    --sd-card-border-radius: 4px;
+    --sd-card-border-color: var(--el-border-color-lighter);
+    --sd-card-background: var(--el-color-white);
+    --sd-card-box-shadow: var(--el-box-shadow-light);
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--el-transition-duration);
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: var(--sd-card-border-radius);
+    background-color: var(--sd-card-background);
+
+    &-col {
+        width: 100%;
+        box-sizing: border-box;
+
+        &--vertical {
+            border-right: 1px solid var(--sd-card-border-color);
+        }
+
+        &--horizontal {
+            border-bottom: 1px solid var(--sd-card-border-color);
+        }
+
+        @for $i from 0 through 24 {
+            @at-root .#{sd-card-col-#{$i}} {
+                width: (math.div(1, 24) * $i * 100) * 1%;
+            }
+        }
+    }
+
+    // 边框显示控制
+    @include m(border) {
+        border: 1px solid var(--sd-card-border-color);
+    }
+
+    // 阴影时机
+    &.is-always-shadow,
+    &.is-hover-shadow:hover,
+    &.is-hover-shadow:focus {
+        box-shadow: var(--sd-card-box-shadow);
+    }
+
+    // 头部区域
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px 0 15px;
+        box-sizing: border-box;
+
+        [class*='el-icon'] {
+            margin-left: 5px;
+        }
+
+        &-title {
+            display: flex;
+            align-items: center;
+        }
+
+        @include m(border) {
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--sd-card-border-color);
+        }
+    }
+
+    // 幽灵模式：内容区域去除 padding, 背景
+    @include m(ghost) {
+        background-color: transparent;
+
+        > .sd-card-body {
+            padding: 0;
+        }
+    }
+
+    // 含有子卡片组件的容器
+    @include m(container) {
+        > .sd-card-body {
+            display: flex;
+        }
+    }
+
+    // 分隔模式
+    @include m(split) {
+        border-radius: 0;
+
+        > .sd-card-body {
+            padding: 0;
+        }
+    }
+
+    @include when(group) {
+        > .sd-card-body {
+            padding: 0;
+
+            > .el-divider {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    // 内容区域
+    &-body {
+        padding: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        &--row {
+            flex-direction: row;
+        }
+
+        &--column {
+            flex-direction: column;
+        }
+
+        &--wrap {
+            flex-wrap: wrap;
+        }
+
+        &--content-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-actions {
+        display: flex;
+
+        @include m(border) {
+            border-top: 1px solid var(--sd-card-border-color);
+        }
+
+        &__item {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 12px 0;
+            font-size: 14px;
+            transition: color var(--el-transition-duration);
+            cursor: pointer;
+
+            &:not(:last-child) {
+                border-right: 1px solid var(--sd-card-border-color);
+            }
+
+            &:hover {
+                color: var(--el-color-primary);
+            }
+
+            [class*=el-icon] + span {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &-scroll-wrap,
+    &-empty-wrap {
+        flex: 1;
+
+        .el-scrollbar__view {
+            height: 100%;
+        }
+    }
+
+    &-empty-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,115 @@
+@use './config.scss' as *;
+
+/* BEM
+ -------------------------- */
+
+/*
+ * eg: @include b(link) { ... } ==> sd-link { ... }
+ */
+@mixin b($block) {
+    $B: $namespace + '-' + $block !global;
+
+    .#{$B} {
+        @content;
+    }
+}
+
+/*
+ * eg:
+ *
+ * @include b(link) {
+ *    @include e(inner) { ... }
+ * }
+ * ===>
+ * .sd-link {
+ *   &__inner { ... }
+ * }
+ */
+@mixin e($element) {
+    $E: $element !global;
+    $selector: &;
+    $currentSelector: '';
+
+    // $B 当前模块文件中的 $B 变量
+    @each $unit in $element {
+        $currentSelector: #{ $currentSelector + '.' + $B + $element-separator + $unit + ',' };
+    }
+
+    @at-root {
+        #{$currentSelector} {
+            @content;
+        }
+    }
+}
+
+/*
+ * eg:
+ *
+ * @include b(link) {
+ *    @include m(success) { ... }
+ * }
+ * ===>
+ * .sd-link {
+ *   &--success { ... }
+ * }
+ */
+@mixin m($modifier) {
+    $selector: &;
+    $currentSelector: '';
+
+    @each $unit in $modifier {
+        $currentSelector: #{ $currentSelector + $selector + $modifier-separator + $unit + ',' };
+    }
+
+    @at-root {
+        #{$currentSelector} {
+            @content;
+        }
+    }
+}
+
+/*
+ * eg:
+ *
+ * @include b(link) {
+ *    @include when(disabled) { ... }
+ * }
+ * ===>
+ * .sd-link.is-disabled { ... }
+ */
+@mixin when($state) {
+    @at-root {
+        &.#{$state-prefix + $state} {
+            @content;
+        }
+    }
+}
+
+// 伪元素、伪选择器
+@mixin pseudo($pseudo) {
+    @at-root #{&}#{':#{$pseudo}'} {
+      @content;
+    }
+}
+
+// 定义及继承共享规则
+@mixin share-rule($name) {
+    $rule-name: '%shared-' + $name;
+
+    @at-root #{$rule-name} {
+        @content;
+    }
+}
+
+@mixin extend-rule($name) {
+    @extend #{'%shared-' + $name} !optional;
+}
+
+// dark
+@mixin dark($block) {
+    .dark {
+        @include b($block) {
+            @content;
+        }
+    }
+}

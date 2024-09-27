@@ -1,0 +1,49 @@
+{
+    "name"       : "@sumdoo/element-plus",
+    "version"    : "0.0.1",
+    "description": "基于 Element Plus 扩展的业务组件库",
+    "types"      : "module",
+    "scripts"    : {
+        "build:type": "vite build"
+    },
+    "author": {
+        "name" : "朱国华",
+        "email": "2223969110@qq.com"
+    },
+    "files": [
+        "README.md",
+        "package.json",
+        "src",
+        "types"
+    ],
+    "main"   : "./src/index.ts",
+    "module" : "./src/index.ts",
+    "exports": {
+        ".": {
+            "types"  : "./types/index.d.ts",
+            "import" : "./src/index.ts",
+            "require": "./src/index.ts"
+        },
+        "./*": "./src/*"
+    },
+    "devDependencies": {
+        "@types/lodash-es"  : "4.17.12",
+        "@types/node"       : "17.0.45",
+        "@types/sortablejs" : "1.15.8",
+        "@vitejs/plugin-vue": "4.5.0",
+        "sass"              : "1.49.9",
+        "typescript"        : "5.3.2",
+        "vite"              : "4.5.0",
+        "vite-plugin-dts"   : "3.7.3"
+    },
+    "dependencies": {
+        "@element-plus/icons-vue": "2.1.0",
+        "async-validator"        : "4.2.5",
+        "cropperjs"              : "1.6.2",
+        "element-plus"           : "2.4.2",
+        "lodash-es"              : "4.17.21",
+        "sortablejs"             : "1.15.0",
+        "vue"                    : "3.3.7",
+        "vue-router"             : "4.2.5"
+    }
+}

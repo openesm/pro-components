@@ -1,0 +1,84 @@
+@use './base.scss' as *;
+
+@include b(link) {
+    --el-link-font-size: var(--el-font-size-base);
+    --el-link-font-weight: var(--el-font-weight-primary);
+    --el-link-text-color: var(--el-text-color-regular);
+    --el-link-hover-text-color: var(--el-color-primary);
+    --el-link-disabled-text-color: var(--el-text-color-placeholder);
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: var(--el-link-font-size);
+    font-weight: var(--el-link-font-weight);
+    color: var(--el-link-text-color);
+
+    &:hover {
+        color: var(--el-link-hover-text-color);
+    }
+
+    @include when(hover-underline) {
+        &:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 0;
+            border-bottom: 1px solid var(--el-link-hover-text-color);
+        }
+    }
+
+    @include when(always-underline) {
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 0;
+            border-bottom: 1px solid var(--el-link-hover-text-color);
+        }
+    }
+
+    @include when(disabled) {
+        color: var(--el-link-disabled-text-color);
+        cursor: not-allowed;
+    }
+
+    @include e(inner) {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @each $type in $types {
+        &.#{$namespace}-link--#{$type} {
+            --el-link-text-color: var(--el-color-#{$type});
+            --el-link-hover-text-color: var(--el-color-#{$type}-light-3);
+            --el-link-disabled-text-color: var(--el-color-#{$type}-light-5);
+
+            &::after {
+                border-color: var(--el-link-text-color);
+            }
+
+            @include when(always-underline) {
+                border-color: var(--el-link-text-color);
+            }
+
+            @include when(hover-underline) {
+                &:hover::after {
+                    border-color: var(--el-link-text-color);
+                }
+            }
+        }
+    }
+}
