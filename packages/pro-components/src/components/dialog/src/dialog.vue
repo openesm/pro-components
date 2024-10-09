@@ -16,7 +16,7 @@ export default defineComponent({
     props     : sdDialogProps,
     emits     : sdDialogEmits,
     setup(props, ctx) {
-        const $proDialog: SdDialogContext = {
+        const $dialog: SdDialogContext = {
             scrollTo,
             setScrollTop,
             setScrollLeft,
@@ -121,7 +121,7 @@ export default defineComponent({
 
         // --------------------------------------------------------------------------------------
         // 是否可关闭抽屉
-        // TODO: 待检查外部是否使用 before-close 属性，后续调整传入 $proDialog 上下文
+        // TODO: 待检查外部是否使用 before-close 属性，后续调整传入 $dialog 上下文
         const onBeforeClose = (done: (cancel?: boolean) => void) => {
             if (isFunction(props.beforeClose)) {
                 props.beforeClose(done)
@@ -146,7 +146,7 @@ export default defineComponent({
 
         // 派发事件
         function dispatchEvent(name: string, params?: Record<string, any>) {
-            ctx.emit(name as any, { ...params, $proDialog })
+            ctx.emit(name as any, { ...params, $dialog })
         }
 
         // 滚动到一组特定坐标
