@@ -1,4 +1,8 @@
-## v24.09.10
+## v0.0.2（24.10.09）
+- [components]：重命名 Dialog 组件事件回调参数 $proDialog 为 $dialog
+- [components]：重命名 Drawer 组件事件回调参数 $proDrawer 为 $drawer
+
+## v0.0.1（24.09.10）
 
 > 使用 ElementPlus 导出的 ScrollInstall 类型，会导致使用的组件无法打包类型成功
 > 通过 Omit 去除部分组件配置选项的，需要重新指定其类型，否则会导致使用的组件无法打包类型成功
@@ -25,12 +29,10 @@
 - [components]：优化 Dialog 组件
     - 支持事件回调参数 $proDialog
     - 支持部分参数本地化，可通过 setOption 直接修改
-    - 待支持插槽传入 $proDialog 参数
     - 移除组件的默认导出，及实例类型导出
 - [components]：优化 Drawer 组件
     - 支持事件回调参数 $proDrawer
     - 支持部分参数本地化，可通过 setOption 直接修改
-    - 待支持插槽传入 $proDrawer 参数
     - 移除组件的默认导出，及实例类型导出
 - [config]: config 文件 增加具名导出 globalConfig
 - [service]: 整理目录结构
