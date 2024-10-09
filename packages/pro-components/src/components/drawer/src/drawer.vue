@@ -17,7 +17,7 @@ export default defineComponent({
     props       : sdDrawerProps,
     emits       : sdDrawerEmits,
     setup(props, ctx) {
-        const $proDrawer = {
+        const $drawer = {
             scrollTo,
             setScrollTop,
             setScrollLeft,
@@ -131,7 +131,7 @@ export default defineComponent({
 
         // 派发事件
         function dispatchEvent(name: string, params?: Record<string, any>) {
-            ctx.emit(name as any, { ...params, $proDrawer })
+            ctx.emit(name as any, { ...params, $drawer })
         }
 
         // 滚动到一组特定坐标
