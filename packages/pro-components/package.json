@@ -1,6 +1,6 @@
 {
     "name"       : "@sumdoo/element-plus",
-    "version"    : "0.0.2",
+    "version"    : "0.0.3",
     "description": "基于 Element Plus 扩展的业务组件库",
     "types"      : "module",
     "scripts"    : {
