@@ -36,6 +36,8 @@ export default defineConfig({
                 'jsbarcode'              ,
                 'qrcode'                 ,
                 'vue-draggable-plus'     ,
+                'vxe-table',
+                'exceljs',
             ],
         },
     },

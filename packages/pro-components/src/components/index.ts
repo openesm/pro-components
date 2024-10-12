@@ -29,3 +29,4 @@ export * from './waterflow'
 export * from './week-time-select'
 
 export * from './pro-form'
+export * from './pro-table'

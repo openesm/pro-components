@@ -1,4 +1,5 @@
 import type { ExtractPublicPropTypes, PropType, StyleValue } from 'vue';
+import type { VxeColumnProps } from 'vxe-table';
 import type { SdProTableDefineTypes } from './types';
 export declare const sdProTableProps: {
     border: {
@@ -26,38 +27,38 @@ export declare const sdProTableProps: {
         default: string;
     };
     align: {
-        type: PropType<VxeTablePropTypes.Align>;
+        type: PropType<import("vxe-table").VxeTablePropTypes.Align>;
         default: string;
     };
     headerAlign: {
-        type: PropType<VxeTablePropTypes.HeaderAlign>;
+        type: PropType<import("vxe-table").VxeTablePropTypes.Align>;
     };
     footerAlign: {
-        type: PropType<VxeTablePropTypes.FooterAlign>;
+        type: PropType<import("vxe-table").VxeTablePropTypes.Align>;
     };
     showOverflow: {
-        type: PropType<VxeTablePropTypes.ShowOverflow>;
+        type: PropType<import("vxe-table").VxeTablePropTypes.ShowOverflow>;
         default: string;
     };
     showHeaderOverflow: {
-        type: PropType<VxeTablePropTypes.ShowHeaderOverflow>;
+        type: PropType<import("vxe-table").VxeTablePropTypes.ShowOverflow>;
         default: string;
     };
     showFooterOverflow: {
-        type: PropType<VxeTablePropTypes.ShowFooterOverflow>;
+        type: PropType<import("vxe-table").VxeTablePropTypes.ShowOverflow>;
         default: string;
     };
     rowClassName: {
-        type: PropType<VxeTablePropTypes.RowClassName>;
+        type: PropType<SdProTableDefineTypes.RowClassName>;
     };
     rowStyle: {
-        type: PropType<VxeTablePropTypes.RowStyle>;
+        type: PropType<SdProTableDefineTypes.RowStyle>;
     };
     cellClassName: {
-        type: PropType<VxeTablePropTypes.CellClassName>;
+        type: PropType<SdProTableDefineTypes.CellClassName>;
     };
     cellStyle: {
-        type: PropType<VxeTablePropTypes.CellStyle>;
+        type: PropType<SdProTableDefineTypes.CellStyle>;
     };
     headerStyle: {
         type: PropType<StyleValue>;
@@ -90,7 +91,7 @@ export declare const sdProTableProps: {
         type: PropType<Record<string, SdProTableDefineTypes.ColumnOptions<any>>>;
     };
     columnConfig: {
-        type: PropType<VxeTablePropTypes.ColumnConfig>;
+        type: PropType<SdProTableDefineTypes.ColumnConfig>;
     };
     rows: {
         type: PropType<any[]>;
@@ -104,7 +105,7 @@ export declare const sdProTableProps: {
         default: number;
     };
     rowConfig: {
-        type: PropType<VxeTablePropTypes.RowConfig>;
+        type: PropType<SdProTableDefineTypes.RowConfig>;
     };
     operations: {
         type: PropType<SdProTableDefineTypes.OperationItem<any>[]>;
@@ -163,34 +164,34 @@ export declare const sdProTableProps: {
         default: boolean;
     };
     seqColumnConfig: {
-        type: PropType<VxeColumnProps>;
+        type: PropType<VxeColumnProps<any>>;
     };
     enableExpand: {
         type: BooleanConstructor;
         default: boolean;
     };
     expandColumnConfig: {
-        type: PropType<VxeColumnProps>;
+        type: PropType<VxeColumnProps<any>>;
     };
     enableReadio: {
         type: BooleanConstructor;
         deafult: boolean;
     };
     radioConfig: {
-        type: PropType<VxeTablePropTypes.RadioConfig>;
+        type: PropType<SdProTableDefineTypes.RadioConfig>;
     };
     radioColumnConfig: {
-        type: PropType<VxeColumnProps>;
+        type: PropType<VxeColumnProps<any>>;
     };
     enableCheckbox: {
         type: BooleanConstructor;
         default: boolean;
     };
     checkboxConfig: {
-        type: PropType<VxeTablePropTypes.CheckboxConfig>;
+        type: PropType<SdProTableDefineTypes.CheckboxConfig>;
     };
     checkboxColumnConfig: {
-        type: PropType<VxeColumnProps>;
+        type: PropType<VxeColumnProps<any>>;
     };
     enableDargSort: {
         type: BooleanConstructor;
@@ -203,7 +204,7 @@ export declare const sdProTableProps: {
         type: PropType<SdProTableDefineTypes.SortableOptions>;
     };
     sortColumnConfig: {
-        type: PropType<VxeColumnProps>;
+        type: PropType<VxeColumnProps<any>>;
     };
     enableEdit: {
         type: BooleanConstructor;
@@ -212,7 +213,7 @@ export declare const sdProTableProps: {
         type: PropType<SdProTableDefineTypes.EditConfig>;
     };
     gridConfig: {
-        type: PropType<VxeTableProps>;
+        type: PropType<SdProTableDefineTypes.GridConfig>;
     };
 };
 export declare const sdProTableEmits: string[];
