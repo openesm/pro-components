@@ -4,6 +4,7 @@ import { ElEmpty, ElScrollbar } from 'element-plus'
 import { isNumber, isFunction } from 'lodash-es'
 import { SdIcon               } from '../../icon'
 import { sdCategoryListProps, sdCategoryListEmits } from './category-list'
+import Sortable from 'sortablejs'
 
 export default defineComponent({
     name      : 'SdCategoryList',
@@ -83,36 +84,34 @@ export default defineComponent({
 
         // 创建排序
         function createSortable() {
-            import('sortablejs').then((module) => {
-                const content_wrap_cls = '.sd-category-list__body .el-scrollbar__wrap .el-scrollbar__view'
-                const el = wrap_ref.value.querySelector(content_wrap_cls)
-                if ( !el ) return
+            const content_wrap_cls = '.sd-category-list__body .el-scrollbar__wrap .el-scrollbar__view'
+            const el = wrap_ref.value.querySelector(content_wrap_cls)
+            if ( !el ) return
 
-                new module.default(el as HTMLElement, {
-                    animation    : 150,
-                    handle       : '.sd-category-list-item',
-                    forceFallback: true,
-                    ...props.dargSortConfig,
-                    onEnd        : async (event: any) => {
-                        const newIndex = event.newIndex as number
-                        const oldIndex = event.oldIndex as number
+            new Sortable(el as HTMLElement, {
+                animation    : 150,
+                handle       : '.sd-category-list-item',
+                forceFallback: true,
+                ...props.dargSortConfig,
+                onEnd        : async (event: any) => {
+                    const newIndex = event.newIndex as number
+                    const oldIndex = event.oldIndex as number
 
-                        // 未移动位置不处理
-                        if (newIndex === oldIndex) return
+                    // 未移动位置不处理
+                    if (newIndex === oldIndex) return
 
-                        state.origin_list = [...state.list]
-                        const drag_row = state.list.splice(oldIndex, 1)[0]
-                        drag_row && state.list.splice(newIndex, 0, drag_row)
+                    state.origin_list = [...state.list]
+                    const drag_row = state.list.splice(oldIndex, 1)[0]
+                    drag_row && state.list.splice(newIndex, 0, drag_row)
 
-                        const emit_parmas = {
-                            newIndex,
-                            oldIndex,
-                            oldData: state.origin_list,
-                            newData: state.list,
-                        }
-                        emit('sort-end', emit_parmas)
-                    },
-                })
+                    const emit_parmas = {
+                        newIndex,
+                        oldIndex,
+                        oldData: state.origin_list,
+                        newData: state.list,
+                    }
+                    emit('sort-end', emit_parmas)
+                },
             })
         }
 
