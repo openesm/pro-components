@@ -117,6 +117,7 @@ declare const _default: import("vue").DefineComponent<{
     stretch: BooleanConstructor;
 }>> & {
     "onUpdate:modelValue"?: ((name: TabPaneName) => any) | undefined;
+    onEdit?: ((paneName: TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
     "onTab-click"?: ((pane: {
         uid: number;
         slots: Readonly<{
@@ -152,7 +153,6 @@ declare const _default: import("vue").DefineComponent<{
         isClosable: boolean;
     }, ev: Event) => any) | undefined;
     onTabChange?: ((name: TabPaneName) => any) | undefined;
-    onEdit?: ((paneName: TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
     onTabRemove?: ((name: TabPaneName) => any) | undefined;
     onTabAdd?: (() => any) | undefined;
 }, {

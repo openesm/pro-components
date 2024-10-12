@@ -216,8 +216,8 @@ declare const _default: import("vue").DefineComponent<{
     reserveKeyword: boolean;
     valueKey: string;
     collapseTags: boolean;
-    popperAppendToBody: boolean;
     fitInputWidth: boolean;
     tagType: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>;
+    popperAppendToBody: boolean;
 }, {}>;
 export default _default;

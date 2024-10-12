@@ -83,10 +83,10 @@ declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{
     column: number;
     list: SdWaterflowTypes.WaterflowItem[];
     confirmButtonText: string;
+    delay: number;
     loadingText: string;
     nomoreText: string;
     nomore: boolean;
-    delay: number;
     distance: number;
 }, {}>, {
     extra?(_: {

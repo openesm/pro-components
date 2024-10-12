@@ -7,6 +7,9 @@ export interface GlobalConfig {
     app: null | App;
     components: {
         datePicker: Record<string, Partial<SdDatePickerProps>>;
+        vxeTable: {
+            cachePrefix: string | (() => string);
+        };
     };
     event: {
         onModalShow: (type: ModalType, opts: Record<string, any>) => void;

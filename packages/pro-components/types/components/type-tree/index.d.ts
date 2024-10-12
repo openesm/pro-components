@@ -7,6 +7,8 @@ export declare const SdTypeTree: ({
             width: string | number;
             prop: import("./src/types").SdTypeTreeTypes.PropConfig;
             list: unknown[];
+            nodeKey: string;
+            accordion: boolean;
             headClass: string | Record<string, string>;
             headStyle: string | import("vue").CSSProperties;
             mainClass: string | Record<string, string>;
@@ -16,13 +18,13 @@ export declare const SdTypeTree: ({
             showHead: boolean;
             showFoot: boolean;
             showRefresh: boolean;
-            accordion: boolean;
-            nodeKey: string;
         }> & Omit<{
             readonly title: string;
             readonly width: string | number;
             readonly prop: import("./src/types").SdTypeTreeTypes.PropConfig;
             readonly list: unknown[];
+            readonly nodeKey: string;
+            readonly accordion: boolean;
             readonly headClass: string | Record<string, string>;
             readonly headStyle: string | import("vue").CSSProperties;
             readonly mainClass: string | Record<string, string>;
@@ -32,8 +34,6 @@ export declare const SdTypeTree: ({
             readonly showHead: boolean;
             readonly showFoot: boolean;
             readonly showRefresh: boolean;
-            readonly accordion: boolean;
-            readonly nodeKey: string;
             readonly emptyText?: string | undefined;
             readonly renderContent?: Function | undefined;
             "onNode-expand"?: ((...args: any[]) => any) | undefined;
@@ -110,7 +110,7 @@ export declare const SdTypeTree: ({
             "onNode-expand"?: ((...args: any[]) => any) | undefined;
             "onNode-click"?: ((...args: any[]) => any) | undefined;
             "onNode-collapse"?: ((...args: any[]) => any) | undefined;
-        }, "title" | "width" | "prop" | "list" | "headClass" | "headStyle" | "mainClass" | "mainStyle" | "footClass" | "footStyle" | "showHead" | "showFoot" | "showRefresh" | "accordion" | "nodeKey">;
+        }, "title" | "width" | "prop" | "list" | "nodeKey" | "accordion" | "headClass" | "headStyle" | "mainClass" | "mainStyle" | "footClass" | "footStyle" | "showHead" | "showFoot" | "showRefresh">;
         $attrs: {
             [x: string]: unknown;
         };
@@ -222,6 +222,8 @@ export declare const SdTypeTree: ({
             width: string | number;
             prop: import("./src/types").SdTypeTreeTypes.PropConfig;
             list: unknown[];
+            nodeKey: string;
+            accordion: boolean;
             headClass: string | Record<string, string>;
             headStyle: string | import("vue").CSSProperties;
             mainClass: string | Record<string, string>;
@@ -231,8 +233,6 @@ export declare const SdTypeTree: ({
             showHead: boolean;
             showFoot: boolean;
             showRefresh: boolean;
-            accordion: boolean;
-            nodeKey: string;
         }, {}, string, {}> & {
             beforeCreate?: ((() => void) | (() => void)[]) | undefined;
             created?: ((() => void) | (() => void)[]) | undefined;
@@ -448,6 +448,8 @@ export declare const SdTypeTree: ({
     width: string | number;
     prop: import("./src/types").SdTypeTreeTypes.PropConfig;
     list: unknown[];
+    nodeKey: string;
+    accordion: boolean;
     headClass: string | Record<string, string>;
     headStyle: string | import("vue").CSSProperties;
     mainClass: string | Record<string, string>;
@@ -457,8 +459,6 @@ export declare const SdTypeTree: ({
     showHead: boolean;
     showFoot: boolean;
     showRefresh: boolean;
-    accordion: boolean;
-    nodeKey: string;
 }, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & import("vue").Plugin) & Record<string, any>;
 export * from './src/type-tree';
 export * from './src/types';

@@ -163,6 +163,8 @@ declare const _default: import("vue").DefineComponent<{
     width: string | number;
     prop: import("./types").SdTypeTreeTypes.PropConfig;
     list: unknown[];
+    nodeKey: string;
+    accordion: boolean;
     headClass: string | Record<string, string>;
     headStyle: string | import("vue").CSSProperties;
     mainClass: string | Record<string, string>;
@@ -172,7 +174,5 @@ declare const _default: import("vue").DefineComponent<{
     showHead: boolean;
     showFoot: boolean;
     showRefresh: boolean;
-    accordion: boolean;
-    nodeKey: string;
 }, {}>;
 export default _default;

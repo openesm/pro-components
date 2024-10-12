@@ -1,0 +1,380 @@
+.sd-pro-table {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &.is-fullscreen {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        padding: 15px 15px 0;
+        box-sizing: border-box;
+        height: 100% !important; // v24.03.14 确保设置固定高度，全屏模式下高度占满一屏
+        background-color: var(--el-color-white);
+    }
+
+    // 表格顶部
+    &-header {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        user-select: none;
+
+        &__left {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            min-height: 32px;
+
+            > .el-button:not(.el-dropdown__caret-button) {
+                min-width: 90px;
+            }
+
+            .el-button[min-w-90] {
+                min-width: 90px;
+            }
+        }
+
+        &__right {
+            display: flex;
+            min-height: 32px;
+
+            // 检索 loading
+            &-search-icon.is-loading {
+                display: inline-block;
+                animation: SdGridSearchLoadingCircle 1.5s infinite linear;
+            }
+        }
+
+        &__tools {
+            display: flex;
+            align-items: center;
+
+            > .el-icon {
+                display: inline-block;
+                cursor: pointer;
+                margin-left: 15px;
+
+                &:hover {
+                    color: var(--el-color-primary);
+                }
+            }
+
+            &.is-disabled {
+                .el-icon {
+                    color: var(--el-text-color-disabled);
+                    cursor: not-allowed;
+                }
+            }
+
+        }
+    }
+
+    &-alert {
+        margin-bottom: 10px;
+    }
+
+    &-body {
+        flex: 1;
+        overflow-y: hidden;
+        background-color: var(--el-color-white);
+
+        // 默认会屏蔽事件
+        &.el-loading-parent--relative {
+            pointer-events: auto
+        }
+
+        // v24.07.11 组件内部自动获取固定高度
+        // .vxe-grid {
+        //     height: 100%;
+        // }
+
+        // v24.06.17 调整为内容区域
+        .sd-status,
+        .sd-link,
+        .el-link {
+            font-size: inherit;
+            color: inherit;
+            font-weight: inherit;
+        }
+    }
+
+    &-footer {
+        display: flex;
+        width: 100%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        background-color: var(--el-color-white);
+
+        &__left {
+            flex: 1;
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+            color: var(--el-text-color-regular);
+        }
+    }
+
+    // v24.06.17 注释
+    // .sd-status,
+    // .sd-link,
+    // .el-link {
+    //     font-size: inherit;
+    //     color: inherit;
+    //     font-weight: inherit;
+    // }
+
+    .el-link {
+        display: inline-block;
+    }
+
+    .el-progress__text {
+        font-size: inherit !important;
+    }
+    .el-progress-bar__inner {
+        transition: none;
+    }
+
+    .vxe-table--render-default .vxe-body--column {
+        line-height: 1.3;
+    }
+}
+
+// 数据导出弹窗
+.sd-pro-table-export-columns-wrap {
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    overflow: hidden;
+
+    &__header {
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f8f8f9;
+        box-sizing: border-box;
+    }
+
+    &.is-expanded &__header {
+        margin-bottom: 10px;
+    }
+
+    .flex-wrap {
+        display: flex;
+
+        &.yc {
+            align-items: center;
+        }
+    }
+}
+
+// 表格列设置弹窗
+.sd-pro-table__column-setting-item {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f8f8f9;
+    }
+}
+
+// 高级表格行操作
+.sd-pro-table-row-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item + &__item {
+        margin-left: 15px;
+    }
+
+    &__item {
+        color: var(--el-color-primary);
+
+    }
+
+    &__item:hover {
+        font-size: 12px;
+        color: var(--el-color-primary-light-5);
+        cursor: pointer;
+    }
+
+    &__item.is-disabled {
+        color: var(--el-text-color-disabled);
+        cursor: not-allowed;
+    }
+
+    .el-icon {
+        margin-left: 15px;
+        color: var(--el-color-primary);
+
+        &:hover {
+            color: var(--el-color-primary-light-5);
+        }
+    }
+}
+
+// 高级列表筛选容器
+.sd-pro-table-filter-wrap {
+    user-select: none;
+    display: inline-block;
+    background-color: var(--el-color-white);
+    border: 1px solid var(--el-border-color);
+
+    &-content {
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+
+        &__item + &__item {
+            margin-left: 10px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+
+            &-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                &-title {
+                    padding-left: 5px;
+                    font-weight: bold;
+                    flex: 1;
+                }
+            }
+
+            &-wrap {
+                flex: 1;
+                border: 1px solid var(--el-border-color);
+                border-radius: 3px;
+                overflow: hidden;
+                width: 310px;
+                height: 250px;
+
+                > .el-input .el-input__wrapper {
+                    box-shadow: none !important;
+                    border-bottom: 1px solid var(--el-border-color);
+                    border-radius: 0;
+                }
+
+                &-body {
+                    padding: 10px 0;
+                    box-sizing: border-box;
+
+                    .el-checkbox {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        cursor: pointer;
+                        padding: 0 10px;
+                        box-sizing: border-box;
+
+                        &:hover {
+                            background-color: rgba(0,0,0,0.05);
+                        }
+                    }
+                }
+            }
+
+            &-wrap-custom {
+                flex: 1;
+                border: 1px solid var(--el-border-color);
+                border-radius: 3px;
+                overflow: hidden;
+                padding: 10px;
+                box-sizing: border-box;
+
+                &-row {
+                    display: flex;
+                    align-items: center;
+
+                    .el-select  {
+                        // min-width: 100px;
+                        margin-right: 10px;
+                    }
+
+                    > .el-date-editor,
+                    > .el-input,
+                    > .el-input-number {
+                        width: 180px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        border-top: 1px solid var(--el-border-color);
+        box-sizing: border-box;
+
+        .el-button {
+            min-width: 90px;
+        }
+    }
+}
+
+// 修改部分 vxe-grid 默认样式
+.sd-pro-table {
+
+    // 表格头部不允许选中
+    .vxe-table--header {
+        user-select: none;
+    }
+
+    // 底部合计项默认粗体显示
+    .vxe-footer--column {
+        font-weight: bold;
+    }
+}
+
+// 不显示列筛选器底部
+.vxe-table--filter-footer {
+    display: none !important;
+}
+
+// 高级表格 body 右侧菜单
+.sd-pro-table-menu-wrap {
+    border-radius: 5px;
+    padding: 12px 0;
+
+    .vxe-context-menu--option-wrapper {
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+
+        li {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+    }
+
+    .vxe-context-menu--link {
+        padding: 8px 15px;
+        border: none;
+        margin: 0;
+
+        &:hover {
+            background-color: var(--el-color-primary);
+            color: var(--el-color-white) !important;
+        }
+    }
+}

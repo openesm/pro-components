@@ -24,6 +24,10 @@ const config: GlobalConfig = {
             datetime     : getDatePickerOptions('datetime'),
             datetimerange: getDatePickerOptions('datetimerange'),
         },
+        // vxeTable 组件配置
+        vxeTable: {
+            cachePrefix: '',
+        },
     },
 
     // 处理相关事件
@@ -42,6 +46,10 @@ export interface GlobalConfig {
     components: {
         // 日期选择器默认属性配置
         datePicker: Record<string, Partial<SdDatePickerProps>>
+        // vxe-table 组件属性配置
+        vxeTable: {
+            cachePrefix: string | (() => string) // 缓存前缀
+        }
     }
 
     // 事件配置

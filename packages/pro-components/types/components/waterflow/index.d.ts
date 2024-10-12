@@ -6,19 +6,19 @@ export declare const SdWaterflow: ({
             column: number;
             list: import("./src/types").SdWaterflowTypes.WaterflowItem[];
             confirmButtonText: string;
+            delay: number;
             loadingText: string;
             nomoreText: string;
             nomore: boolean;
-            delay: number;
             distance: number;
         }> & Omit<{
             readonly column: number;
             readonly list: import("./src/types").SdWaterflowTypes.WaterflowItem[];
             readonly confirmButtonText: string;
+            readonly delay: number;
             readonly loadingText: string;
             readonly nomoreText: string;
             readonly nomore: boolean;
-            readonly delay: number;
             readonly distance: number;
             readonly scrollbarConfig?: Partial<import("element-plus").ScrollbarProps> | undefined;
             readonly loadmore?: Function | undefined;
@@ -61,7 +61,7 @@ export declare const SdWaterflow: ({
                 type: NumberConstructor;
                 default: number;
             };
-        }>>, "column" | "list" | "confirmButtonText" | "loadingText" | "nomoreText" | "nomore" | "delay" | "distance">;
+        }>>, "column" | "list" | "confirmButtonText" | "delay" | "loadingText" | "nomoreText" | "nomore" | "distance">;
         $attrs: {
             [x: string]: unknown;
         };
@@ -120,10 +120,10 @@ export declare const SdWaterflow: ({
             column: number;
             list: import("./src/types").SdWaterflowTypes.WaterflowItem[];
             confirmButtonText: string;
+            delay: number;
             loadingText: string;
             nomoreText: string;
             nomore: boolean;
-            delay: number;
             distance: number;
         }, {}, string, {}> & {
             beforeCreate?: ((() => void) | (() => void)[]) | undefined;
@@ -233,10 +233,10 @@ export declare const SdWaterflow: ({
     column: number;
     list: import("./src/types").SdWaterflowTypes.WaterflowItem[];
     confirmButtonText: string;
+    delay: number;
     loadingText: string;
     nomoreText: string;
     nomore: boolean;
-    delay: number;
     distance: number;
 }, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & (new () => {
     $slots: {

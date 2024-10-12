@@ -25,9 +25,9 @@ export declare const SdSelect: ({
             reserveKeyword: boolean;
             valueKey: string;
             collapseTags: boolean;
-            popperAppendToBody: boolean;
             fitInputWidth: boolean;
             tagType: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>;
+            popperAppendToBody: boolean;
         }> & Omit<{
             [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
             readonly group: boolean;
@@ -160,7 +160,7 @@ export declare const SdSelect: ({
             };
         }>> & {
             [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
-        }, "group" | "disabled" | "persistent" | "teleported" | "effect" | "popperClass" | "modelValue" | "options" | "loading" | "multiple" | "placeholder" | "clearable" | "autocomplete" | "automaticDropdown" | "filterable" | "allowCreate" | "remote" | "multipleLimit" | "defaultFirstOption" | "reserveKeyword" | "valueKey" | "collapseTags" | "popperAppendToBody" | "fitInputWidth" | "tagType">;
+        }, "group" | "disabled" | "persistent" | "teleported" | "effect" | "popperClass" | "modelValue" | "options" | "loading" | "multiple" | "placeholder" | "clearable" | "autocomplete" | "automaticDropdown" | "filterable" | "allowCreate" | "remote" | "multipleLimit" | "defaultFirstOption" | "reserveKeyword" | "valueKey" | "collapseTags" | "fitInputWidth" | "tagType" | "popperAppendToBody">;
         $attrs: {
             [x: string]: unknown;
         };
@@ -300,9 +300,9 @@ export declare const SdSelect: ({
             reserveKeyword: boolean;
             valueKey: string;
             collapseTags: boolean;
-            popperAppendToBody: boolean;
             fitInputWidth: boolean;
             tagType: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>;
+            popperAppendToBody: boolean;
         }, {}, string, {}> & {
             beforeCreate?: ((() => void) | (() => void)[]) | undefined;
             created?: ((() => void) | (() => void)[]) | undefined;
@@ -556,8 +556,8 @@ export declare const SdSelect: ({
     reserveKeyword: boolean;
     valueKey: string;
     collapseTags: boolean;
-    popperAppendToBody: boolean;
     fitInputWidth: boolean;
     tagType: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>;
+    popperAppendToBody: boolean;
 }, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & import("vue").Plugin) & Record<string, any>;
 export * from './src/select';

@@ -24,6 +24,7 @@ export declare const SdTabs: ({
             readonly modelValue?: import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
             readonly activeName?: import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
             "onUpdate:modelValue"?: ((name: import("element-plus").TabPaneName) => any) | undefined;
+            onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
             "onTab-click"?: ((pane: {
                 uid: number;
                 slots: Readonly<{
@@ -59,7 +60,6 @@ export declare const SdTabs: ({
                 isClosable: boolean;
             }, ev: Event) => any) | undefined;
             onTabChange?: ((name: import("element-plus").TabPaneName) => any) | undefined;
-            onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
             onTabRemove?: ((name: import("element-plus").TabPaneName) => any) | undefined;
             onTabAdd?: (() => any) | undefined;
         } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & Readonly<import("vue").ExtractPropTypes<{
@@ -99,6 +99,7 @@ export declare const SdTabs: ({
             stretch: BooleanConstructor;
         }>> & {
             "onUpdate:modelValue"?: ((name: import("element-plus").TabPaneName) => any) | undefined;
+            onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
             "onTab-click"?: ((pane: {
                 uid: number;
                 slots: Readonly<{
@@ -134,7 +135,6 @@ export declare const SdTabs: ({
                 isClosable: boolean;
             }, ev: Event) => any) | undefined;
             onTabChange?: ((name: import("element-plus").TabPaneName) => any) | undefined;
-            onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
             onTabRemove?: ((name: import("element-plus").TabPaneName) => any) | undefined;
             onTabAdd?: (() => any) | undefined;
         }, "type" | "options" | "stretch" | "editable" | "beforeLeave" | "closable" | "addable" | "tabPosition">;
@@ -149,7 +149,7 @@ export declare const SdTabs: ({
         }>;
         $root: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
         $parent: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
-        $emit: ((event: "update:modelValue", name: import("element-plus").TabPaneName) => void) & ((event: "tab-click", pane: {
+        $emit: ((event: "update:modelValue", name: import("element-plus").TabPaneName) => void) & ((event: "edit", paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => void) & ((event: "tab-click", pane: {
             uid: number;
             slots: Readonly<{
                 [name: string]: import("vue").Slot<any> | undefined;
@@ -181,7 +181,7 @@ export declare const SdTabs: ({
             active: boolean;
             index: string | undefined;
             isClosable: boolean;
-        }, ev: Event) => void) & ((event: "tabChange", name: import("element-plus").TabPaneName) => void) & ((event: "edit", paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => void) & ((event: "tabRemove", name: import("element-plus").TabPaneName) => void) & ((event: "tabAdd") => void);
+        }, ev: Event) => void) & ((event: "tabChange", name: import("element-plus").TabPaneName) => void) & ((event: "tabRemove", name: import("element-plus").TabPaneName) => void) & ((event: "tabAdd") => void);
         $el: any;
         $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
             options: {
@@ -220,6 +220,7 @@ export declare const SdTabs: ({
             stretch: BooleanConstructor;
         }>> & {
             "onUpdate:modelValue"?: ((name: import("element-plus").TabPaneName) => any) | undefined;
+            onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
             "onTab-click"?: ((pane: {
                 uid: number;
                 slots: Readonly<{
@@ -255,7 +256,6 @@ export declare const SdTabs: ({
                 isClosable: boolean;
             }, ev: Event) => any) | undefined;
             onTabChange?: ((name: import("element-plus").TabPaneName) => any) | undefined;
-            onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
             onTabRemove?: ((name: import("element-plus").TabPaneName) => any) | undefined;
             onTabAdd?: (() => any) | undefined;
         }, {
@@ -386,6 +386,7 @@ export declare const SdTabs: ({
         stretch: BooleanConstructor;
     }>> & {
         "onUpdate:modelValue"?: ((name: import("element-plus").TabPaneName) => any) | undefined;
+        onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
         "onTab-click"?: ((pane: {
             uid: number;
             slots: Readonly<{
@@ -421,7 +422,6 @@ export declare const SdTabs: ({
             isClosable: boolean;
         }, ev: Event) => any) | undefined;
         onTabChange?: ((name: import("element-plus").TabPaneName) => any) | undefined;
-        onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
         onTabRemove?: ((name: import("element-plus").TabPaneName) => any) | undefined;
         onTabAdd?: (() => any) | undefined;
     } & import("vue").ShallowUnwrapRef<{
@@ -487,6 +487,7 @@ export declare const SdTabs: ({
     stretch: BooleanConstructor;
 }>> & {
     "onUpdate:modelValue"?: ((name: import("element-plus").TabPaneName) => any) | undefined;
+    onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
     "onTab-click"?: ((pane: {
         uid: number;
         slots: Readonly<{
@@ -522,7 +523,6 @@ export declare const SdTabs: ({
         isClosable: boolean;
     }, ev: Event) => any) | undefined;
     onTabChange?: ((name: import("element-plus").TabPaneName) => any) | undefined;
-    onEdit?: ((paneName: import("element-plus").TabPaneName | undefined, action: "add" | "remove") => any) | undefined;
     onTabRemove?: ((name: import("element-plus").TabPaneName) => any) | undefined;
     onTabAdd?: (() => any) | undefined;
 }, {
