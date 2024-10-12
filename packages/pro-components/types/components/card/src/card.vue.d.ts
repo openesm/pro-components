@@ -1,6 +1,5 @@
-import { ComponentPublicInstance, CSSProperties } from 'vue';
-
-declare const _default: import('vue').DefineComponent<{
+import type { ComponentPublicInstance, CSSProperties } from 'vue';
+declare const _default: import("vue").DefineComponent<{
     title: {
         type: StringConstructor;
     };
@@ -14,7 +13,7 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
     };
     shadow: {
-        type: import('vue').PropType<"never" | "hover" | "always">;
+        type: import("vue").PropType<"never" | "hover" | "always">;
         default: string;
     };
     headerClass: {
@@ -22,7 +21,7 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     headerStyle: {
-        type: import('vue').PropType<CSSProperties>;
+        type: import("vue").PropType<CSSProperties>;
     };
     headerBordered: {
         type: BooleanConstructor;
@@ -37,21 +36,21 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     gutter: {
-        type: import('vue').PropType<number | number[]>;
+        type: import("vue").PropType<number | number[]>;
     };
     group: {
         type: BooleanConstructor;
         default: boolean;
     };
     colSpan: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
         default: number;
     };
     split: {
-        type: import('vue').PropType<"horizontal" | "vertical">;
+        type: import("vue").PropType<"horizontal" | "vertical">;
     };
     direction: {
-        type: import('vue').PropType<"row" | "column">;
+        type: import("vue").PropType<"row" | "column">;
     };
     wrap: {
         type: BooleanConstructor;
@@ -62,17 +61,17 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     height: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     maxHeight: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     bodyClass: {
         type: StringConstructor;
         default: string;
     };
     bodyStyle: {
-        type: import('vue').PropType<CSSProperties>;
+        type: import("vue").PropType<CSSProperties>;
         default: () => {};
     };
     showEmpty: {
@@ -88,23 +87,23 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     actions: {
-        type: import('vue').PropType<{
+        type: import("vue").PropType<{
             key: string;
-            icon?: import('vue').Component | undefined;
+            icon?: import("vue").Component | undefined;
             text?: string | undefined;
         }[]>;
         default: () => never[];
     };
 }, {
-    childVNodes: import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
+    childVNodes: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
         [key: string]: any;
     }>[];
-    isContainer$: import('vue').ComputedRef<boolean>;
-    bodyFlexDirection$: import('vue').ComputedRef<"row" | "column" | undefined>;
+    isContainer$: import("vue").ComputedRef<boolean>;
+    bodyFlexDirection$: import("vue").ComputedRef<"row" | "column" | undefined>;
     getBodyGutterStyle: () => CSSProperties;
     getCardColClass: (component: ComponentPublicInstance<any>, idx: number) => string[];
     getCardColStyle: (component: ComponentPublicInstance<any>) => CSSProperties;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     title: {
         type: StringConstructor;
     };
@@ -118,7 +117,7 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
     };
     shadow: {
-        type: import('vue').PropType<"never" | "hover" | "always">;
+        type: import("vue").PropType<"never" | "hover" | "always">;
         default: string;
     };
     headerClass: {
@@ -126,7 +125,7 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     headerStyle: {
-        type: import('vue').PropType<CSSProperties>;
+        type: import("vue").PropType<CSSProperties>;
     };
     headerBordered: {
         type: BooleanConstructor;
@@ -141,21 +140,21 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     gutter: {
-        type: import('vue').PropType<number | number[]>;
+        type: import("vue").PropType<number | number[]>;
     };
     group: {
         type: BooleanConstructor;
         default: boolean;
     };
     colSpan: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
         default: number;
     };
     split: {
-        type: import('vue').PropType<"horizontal" | "vertical">;
+        type: import("vue").PropType<"horizontal" | "vertical">;
     };
     direction: {
-        type: import('vue').PropType<"row" | "column">;
+        type: import("vue").PropType<"row" | "column">;
     };
     wrap: {
         type: BooleanConstructor;
@@ -166,17 +165,17 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     height: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     maxHeight: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     bodyClass: {
         type: StringConstructor;
         default: string;
     };
     bodyStyle: {
-        type: import('vue').PropType<CSSProperties>;
+        type: import("vue").PropType<CSSProperties>;
         default: () => {};
     };
     showEmpty: {
@@ -192,9 +191,9 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     actions: {
-        type: import('vue').PropType<{
+        type: import("vue").PropType<{
             key: string;
-            icon?: import('vue').Component | undefined;
+            icon?: import("vue").Component | undefined;
             text?: string | undefined;
         }[]>;
         default: () => never[];
@@ -218,7 +217,7 @@ declare const _default: import('vue').DefineComponent<{
     actionsBordered: boolean;
     actions: {
         key: string;
-        icon?: import('vue').Component | undefined;
+        icon?: import("vue").Component | undefined;
         text?: string | undefined;
     }[];
 }, {}>;

@@ -1,6 +1,6 @@
 export declare const SdContainer: ({
     new (...args: any[]): {
-        $: import('vue').ComponentInternalInstance;
+        $: import("vue").ComponentInternalInstance;
         $data: {};
         $props: Partial<{
             readonly wrap: boolean;
@@ -23,16 +23,16 @@ export declare const SdContainer: ({
             readonly showError: boolean;
             readonly title?: string | undefined;
             readonly headerClass?: string | undefined;
-            readonly headerStyle?: import('vue').StyleValue | undefined;
+            readonly headerStyle?: import("vue").StyleValue | undefined;
             readonly bodyClass?: string | undefined;
-            readonly bodyStyle?: import('vue').StyleValue | undefined;
+            readonly bodyStyle?: import("vue").StyleValue | undefined;
             readonly footerClass?: string | undefined;
-            readonly footerStyle?: import('vue').StyleValue | undefined;
-            readonly scrollbarConfig?: Partial<import('element-plus').ScrollbarProps> | undefined;
-            readonly titleStyle?: import('vue').StyleValue | undefined;
-            readonly contentStyle?: import('vue').StyleValue | undefined;
+            readonly footerStyle?: import("vue").StyleValue | undefined;
+            readonly scrollbarConfig?: Partial<import("element-plus").ScrollbarProps> | undefined;
+            readonly titleStyle?: import("vue").StyleValue | undefined;
+            readonly contentStyle?: import("vue").StyleValue | undefined;
             readonly errorText?: string | undefined;
-        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & Readonly<import('vue').ExtractPropTypes<{
+        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & Readonly<import("vue").ExtractPropTypes<{
             readonly lockScroll: {
                 readonly type: BooleanConstructor;
                 readonly default: false;
@@ -50,22 +50,22 @@ export declare const SdContainer: ({
                 readonly type: StringConstructor;
             };
             readonly headerStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly titleStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly bodyClass: {
                 readonly type: StringConstructor;
             };
             readonly bodyStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly renderContent: {
                 readonly type: BooleanConstructor;
             };
             readonly contentStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly footerFixed: {
                 readonly type: BooleanConstructor;
@@ -74,10 +74,10 @@ export declare const SdContainer: ({
                 readonly type: StringConstructor;
             };
             readonly footerStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly scrollbarConfig: {
-                readonly type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+                readonly type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
             };
             readonly loading: {
                 readonly type: BooleanConstructor;
@@ -102,13 +102,13 @@ export declare const SdContainer: ({
             [x: string]: unknown;
         };
         $slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
-        $root: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
-        $parent: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $root: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $parent: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
         $emit: (event: string, ...args: any[]) => void;
         $el: any;
-        $options: import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+        $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
             readonly lockScroll: {
                 readonly type: BooleanConstructor;
                 readonly default: false;
@@ -126,22 +126,22 @@ export declare const SdContainer: ({
                 readonly type: StringConstructor;
             };
             readonly headerStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly titleStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly bodyClass: {
                 readonly type: StringConstructor;
             };
             readonly bodyStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly renderContent: {
                 readonly type: BooleanConstructor;
             };
             readonly contentStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly footerFixed: {
                 readonly type: BooleanConstructor;
@@ -150,10 +150,10 @@ export declare const SdContainer: ({
                 readonly type: StringConstructor;
             };
             readonly footerStyle: {
-                readonly type: import('vue').PropType<import('vue').StyleValue>;
+                readonly type: import("vue").PropType<import("vue").StyleValue>;
             };
             readonly scrollbarConfig: {
-                readonly type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+                readonly type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
             };
             readonly loading: {
                 readonly type: BooleanConstructor;
@@ -171,11 +171,11 @@ export declare const SdContainer: ({
         }>> & {
             [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
         }, {
-            scroll_ref: import('vue').Ref<any>;
-            scrollbar_config$: import('vue').ComputedRef<{}>;
+            scroll_ref: import("vue").Ref<any>;
+            scrollbar_config$: import("vue").ComputedRef<{}>;
             scrollToTop: () => void;
-            IconRefresh: import('vue').DefineComponent<{}, {}, {}, import('vue').ComputedOptions, import('vue').MethodOptions, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}>;
-        }, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, {
+            IconRefresh: import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>;
+        }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, {
             readonly wrap: boolean;
             readonly lockScroll: boolean;
             readonly headerFixed: boolean;
@@ -197,14 +197,14 @@ export declare const SdContainer: ({
             beforeUnmount?: ((() => void) | (() => void)[]) | undefined;
             destroyed?: ((() => void) | (() => void)[]) | undefined;
             unmounted?: ((() => void) | (() => void)[]) | undefined;
-            renderTracked?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            renderTriggered?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            errorCaptured?: (((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
+            renderTracked?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            renderTriggered?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            errorCaptured?: (((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
         };
         $forceUpdate: () => void;
-        $nextTick: typeof import('vue').nextTick;
-        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import('vue').WatchOptions<boolean> | undefined): import('vue').WatchStopHandle;
-    } & Readonly<import('vue').ExtractPropTypes<{
+        $nextTick: typeof import("vue").nextTick;
+        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import("vue").WatchOptions<boolean> | undefined): import("vue").WatchStopHandle;
+    } & Readonly<import("vue").ExtractPropTypes<{
         readonly lockScroll: {
             readonly type: BooleanConstructor;
             readonly default: false;
@@ -222,22 +222,22 @@ export declare const SdContainer: ({
             readonly type: StringConstructor;
         };
         readonly headerStyle: {
-            readonly type: import('vue').PropType<import('vue').StyleValue>;
+            readonly type: import("vue").PropType<import("vue").StyleValue>;
         };
         readonly titleStyle: {
-            readonly type: import('vue').PropType<import('vue').StyleValue>;
+            readonly type: import("vue").PropType<import("vue").StyleValue>;
         };
         readonly bodyClass: {
             readonly type: StringConstructor;
         };
         readonly bodyStyle: {
-            readonly type: import('vue').PropType<import('vue').StyleValue>;
+            readonly type: import("vue").PropType<import("vue").StyleValue>;
         };
         readonly renderContent: {
             readonly type: BooleanConstructor;
         };
         readonly contentStyle: {
-            readonly type: import('vue').PropType<import('vue').StyleValue>;
+            readonly type: import("vue").PropType<import("vue").StyleValue>;
         };
         readonly footerFixed: {
             readonly type: BooleanConstructor;
@@ -246,10 +246,10 @@ export declare const SdContainer: ({
             readonly type: StringConstructor;
         };
         readonly footerStyle: {
-            readonly type: import('vue').PropType<import('vue').StyleValue>;
+            readonly type: import("vue").PropType<import("vue").StyleValue>;
         };
         readonly scrollbarConfig: {
-            readonly type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+            readonly type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
         };
         readonly loading: {
             readonly type: BooleanConstructor;
@@ -266,16 +266,16 @@ export declare const SdContainer: ({
         };
     }>> & {
         [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
-    } & import('vue').ShallowUnwrapRef<{
-        scroll_ref: import('vue').Ref<any>;
-        scrollbar_config$: import('vue').ComputedRef<{}>;
+    } & import("vue").ShallowUnwrapRef<{
+        scroll_ref: import("vue").Ref<any>;
+        scrollbar_config$: import("vue").ComputedRef<{}>;
         scrollToTop: () => void;
-        IconRefresh: import('vue').DefineComponent<{}, {}, {}, import('vue').ComputedOptions, import('vue').MethodOptions, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}>;
-    }> & {} & import('vue').ComponentCustomProperties & {};
+        IconRefresh: import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>;
+    }> & {} & import("vue").ComponentCustomProperties & {};
     __isFragment?: undefined;
     __isTeleport?: undefined;
     __isSuspense?: undefined;
-} & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+} & import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
     readonly lockScroll: {
         readonly type: BooleanConstructor;
         readonly default: false;
@@ -293,22 +293,22 @@ export declare const SdContainer: ({
         readonly type: StringConstructor;
     };
     readonly headerStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly titleStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly bodyClass: {
         readonly type: StringConstructor;
     };
     readonly bodyStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly renderContent: {
         readonly type: BooleanConstructor;
     };
     readonly contentStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly footerFixed: {
         readonly type: BooleanConstructor;
@@ -317,10 +317,10 @@ export declare const SdContainer: ({
         readonly type: StringConstructor;
     };
     readonly footerStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly scrollbarConfig: {
-        readonly type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+        readonly type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
     };
     readonly loading: {
         readonly type: BooleanConstructor;
@@ -338,11 +338,11 @@ export declare const SdContainer: ({
 }>> & {
     [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
 }, {
-    scroll_ref: import('vue').Ref<any>;
-    scrollbar_config$: import('vue').ComputedRef<{}>;
+    scroll_ref: import("vue").Ref<any>;
+    scrollbar_config$: import("vue").ComputedRef<{}>;
     scrollToTop: () => void;
-    IconRefresh: import('vue').DefineComponent<{}, {}, {}, import('vue').ComputedOptions, import('vue').MethodOptions, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}>;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, {
+    IconRefresh: import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, {
     readonly wrap: boolean;
     readonly lockScroll: boolean;
     readonly headerFixed: boolean;
@@ -351,5 +351,5 @@ export declare const SdContainer: ({
     readonly loading: boolean;
     readonly loadingDelay: number;
     readonly showError: boolean;
-}, {}, string, {}> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & import('vue').Plugin) & Record<string, any>;
+}, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & import("vue").Plugin) & Record<string, any>;
 export * from './src/container';

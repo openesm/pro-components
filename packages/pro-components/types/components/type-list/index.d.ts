@@ -1,6 +1,6 @@
 export declare const SdTypeList: ({
     new (...args: any[]): {
-        $: import('vue').ComponentInternalInstance;
+        $: import("vue").ComponentInternalInstance;
         $data: {};
         $props: Partial<{
             title: string;
@@ -30,10 +30,10 @@ export declare const SdTypeList: ({
             readonly animation: number;
             readonly showOption: boolean;
             readonly showMore: boolean;
-            readonly headerStyle?: import('vue').CSSProperties | undefined;
+            readonly headerStyle?: import("vue").CSSProperties | undefined;
             readonly emptyText?: string | undefined;
             readonly filter?: Function | undefined;
-            readonly footerStyle?: import('vue').CSSProperties | undefined;
+            readonly footerStyle?: import("vue").CSSProperties | undefined;
             readonly prop?: {
                 label?: string | undefined;
                 value?: string | undefined;
@@ -44,9 +44,9 @@ export declare const SdTypeList: ({
             "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
             "onSort-start"?: ((...args: any[]) => any) | undefined;
             "onSort-end"?: ((...args: any[]) => any) | undefined;
-        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & Readonly<import('vue').ExtractPropTypes<{
+        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & Readonly<import("vue").ExtractPropTypes<{
             width: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
                 default: number;
             };
             showHeader: {
@@ -58,7 +58,7 @@ export declare const SdTypeList: ({
                 default: string;
             };
             headerStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             showFooter: {
                 type: BooleanConstructor;
@@ -69,7 +69,7 @@ export declare const SdTypeList: ({
                 default: string;
             };
             footerStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             showOption: {
                 type: BooleanConstructor;
@@ -88,7 +88,7 @@ export declare const SdTypeList: ({
                 default: () => never[];
             };
             prop: {
-                type: import('vue').PropType<{
+                type: import("vue").PropType<{
                     label?: string | undefined;
                     value?: string | undefined;
                     icon?: string | undefined;
@@ -100,7 +100,7 @@ export declare const SdTypeList: ({
                 default: boolean;
             };
             modelValue: {
-                type: import('vue').PropType<Record<string, any> | null>;
+                type: import("vue").PropType<Record<string, any> | null>;
                 default: null;
             };
             emptyText: {
@@ -132,15 +132,15 @@ export declare const SdTypeList: ({
             [x: string]: unknown;
         };
         $slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
-        $root: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
-        $parent: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $root: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $parent: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
         $emit: (event: "sort-start" | "sort-end" | "update:modelValue", ...args: any[]) => void;
         $el: any;
-        $options: import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+        $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
             width: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
                 default: number;
             };
             showHeader: {
@@ -152,7 +152,7 @@ export declare const SdTypeList: ({
                 default: string;
             };
             headerStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             showFooter: {
                 type: BooleanConstructor;
@@ -163,7 +163,7 @@ export declare const SdTypeList: ({
                 default: string;
             };
             footerStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             showOption: {
                 type: BooleanConstructor;
@@ -182,7 +182,7 @@ export declare const SdTypeList: ({
                 default: () => never[];
             };
             prop: {
-                type: import('vue').PropType<{
+                type: import("vue").PropType<{
                     label?: string | undefined;
                     value?: string | undefined;
                     icon?: string | undefined;
@@ -194,7 +194,7 @@ export declare const SdTypeList: ({
                 default: boolean;
             };
             modelValue: {
-                type: import('vue').PropType<Record<string, any> | null>;
+                type: import("vue").PropType<Record<string, any> | null>;
                 default: null;
             };
             emptyText: {
@@ -219,24 +219,24 @@ export declare const SdTypeList: ({
             "onSort-start"?: ((...args: any[]) => any) | undefined;
             "onSort-end"?: ((...args: any[]) => any) | undefined;
         }, {
-            internalValue$: import('vue').WritableComputedRef<Record<string, any> | null>;
-            wrapStyle$: import('vue').ComputedRef<{
+            internalValue$: import("vue").WritableComputedRef<Record<string, any> | null>;
+            wrapStyle$: import("vue").ComputedRef<{
                 width: string;
                 minWidth: string;
             }>;
-            list$: import('vue').ComputedRef<any>;
-            prop$: import('vue').ComputedRef<{
+            list$: import("vue").ComputedRef<any>;
+            prop$: import("vue").ComputedRef<{
                 label: string;
                 value: string;
                 icon: string;
                 count: string;
             }>;
-            scrollbarRef: import('vue').Ref<any>;
+            scrollbarRef: import("vue").Ref<any>;
             onScroll: (detail: {
                 scrollTop: number;
             }) => void;
             onClick: (element: any) => void;
-        }, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, ("sort-start" | "sort-end" | "update:modelValue")[], string, {
+        }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("sort-start" | "sort-end" | "update:modelValue")[], string, {
             title: string;
             headerClass: string;
             sort: boolean;
@@ -263,16 +263,16 @@ export declare const SdTypeList: ({
             beforeUnmount?: ((() => void) | (() => void)[]) | undefined;
             destroyed?: ((() => void) | (() => void)[]) | undefined;
             unmounted?: ((() => void) | (() => void)[]) | undefined;
-            renderTracked?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            renderTriggered?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            errorCaptured?: (((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
+            renderTracked?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            renderTriggered?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            errorCaptured?: (((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
         };
         $forceUpdate: () => void;
-        $nextTick: typeof import('vue').nextTick;
-        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import('vue').WatchOptions<boolean> | undefined): import('vue').WatchStopHandle;
-    } & Readonly<import('vue').ExtractPropTypes<{
+        $nextTick: typeof import("vue").nextTick;
+        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import("vue").WatchOptions<boolean> | undefined): import("vue").WatchStopHandle;
+    } & Readonly<import("vue").ExtractPropTypes<{
         width: {
-            type: import('vue').PropType<string | number>;
+            type: import("vue").PropType<string | number>;
             default: number;
         };
         showHeader: {
@@ -284,7 +284,7 @@ export declare const SdTypeList: ({
             default: string;
         };
         headerStyle: {
-            type: import('vue').PropType<import('vue').CSSProperties>;
+            type: import("vue").PropType<import("vue").CSSProperties>;
         };
         showFooter: {
             type: BooleanConstructor;
@@ -295,7 +295,7 @@ export declare const SdTypeList: ({
             default: string;
         };
         footerStyle: {
-            type: import('vue').PropType<import('vue').CSSProperties>;
+            type: import("vue").PropType<import("vue").CSSProperties>;
         };
         showOption: {
             type: BooleanConstructor;
@@ -314,7 +314,7 @@ export declare const SdTypeList: ({
             default: () => never[];
         };
         prop: {
-            type: import('vue').PropType<{
+            type: import("vue").PropType<{
                 label?: string | undefined;
                 value?: string | undefined;
                 icon?: string | undefined;
@@ -326,7 +326,7 @@ export declare const SdTypeList: ({
             default: boolean;
         };
         modelValue: {
-            type: import('vue').PropType<Record<string, any> | null>;
+            type: import("vue").PropType<Record<string, any> | null>;
             default: null;
         };
         emptyText: {
@@ -350,31 +350,31 @@ export declare const SdTypeList: ({
         "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
         "onSort-start"?: ((...args: any[]) => any) | undefined;
         "onSort-end"?: ((...args: any[]) => any) | undefined;
-    } & import('vue').ShallowUnwrapRef<{
-        internalValue$: import('vue').WritableComputedRef<Record<string, any> | null>;
-        wrapStyle$: import('vue').ComputedRef<{
+    } & import("vue").ShallowUnwrapRef<{
+        internalValue$: import("vue").WritableComputedRef<Record<string, any> | null>;
+        wrapStyle$: import("vue").ComputedRef<{
             width: string;
             minWidth: string;
         }>;
-        list$: import('vue').ComputedRef<any>;
-        prop$: import('vue').ComputedRef<{
+        list$: import("vue").ComputedRef<any>;
+        prop$: import("vue").ComputedRef<{
             label: string;
             value: string;
             icon: string;
             count: string;
         }>;
-        scrollbarRef: import('vue').Ref<any>;
+        scrollbarRef: import("vue").Ref<any>;
         onScroll: (detail: {
             scrollTop: number;
         }) => void;
         onClick: (element: any) => void;
-    }> & {} & import('vue').ComponentCustomProperties & {};
+    }> & {} & import("vue").ComponentCustomProperties & {};
     __isFragment?: undefined;
     __isTeleport?: undefined;
     __isSuspense?: undefined;
-} & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+} & import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
     width: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
         default: number;
     };
     showHeader: {
@@ -386,7 +386,7 @@ export declare const SdTypeList: ({
         default: string;
     };
     headerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     showFooter: {
         type: BooleanConstructor;
@@ -397,7 +397,7 @@ export declare const SdTypeList: ({
         default: string;
     };
     footerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     showOption: {
         type: BooleanConstructor;
@@ -416,7 +416,7 @@ export declare const SdTypeList: ({
         default: () => never[];
     };
     prop: {
-        type: import('vue').PropType<{
+        type: import("vue").PropType<{
             label?: string | undefined;
             value?: string | undefined;
             icon?: string | undefined;
@@ -428,7 +428,7 @@ export declare const SdTypeList: ({
         default: boolean;
     };
     modelValue: {
-        type: import('vue').PropType<Record<string, any> | null>;
+        type: import("vue").PropType<Record<string, any> | null>;
         default: null;
     };
     emptyText: {
@@ -453,24 +453,24 @@ export declare const SdTypeList: ({
     "onSort-start"?: ((...args: any[]) => any) | undefined;
     "onSort-end"?: ((...args: any[]) => any) | undefined;
 }, {
-    internalValue$: import('vue').WritableComputedRef<Record<string, any> | null>;
-    wrapStyle$: import('vue').ComputedRef<{
+    internalValue$: import("vue").WritableComputedRef<Record<string, any> | null>;
+    wrapStyle$: import("vue").ComputedRef<{
         width: string;
         minWidth: string;
     }>;
-    list$: import('vue').ComputedRef<any>;
-    prop$: import('vue').ComputedRef<{
+    list$: import("vue").ComputedRef<any>;
+    prop$: import("vue").ComputedRef<{
         label: string;
         value: string;
         icon: string;
         count: string;
     }>;
-    scrollbarRef: import('vue').Ref<any>;
+    scrollbarRef: import("vue").Ref<any>;
     onScroll: (detail: {
         scrollTop: number;
     }) => void;
     onClick: (element: any) => void;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, ("sort-start" | "sort-end" | "update:modelValue")[], "sort-start" | "sort-end" | "update:modelValue", {
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("sort-start" | "sort-end" | "update:modelValue")[], "sort-start" | "sort-end" | "update:modelValue", {
     title: string;
     headerClass: string;
     sort: boolean;
@@ -484,5 +484,5 @@ export declare const SdTypeList: ({
     animation: number;
     showOption: boolean;
     showMore: boolean;
-}, {}, string, {}> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & import('vue').Plugin) & Record<string, any>;
+}, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & import("vue").Plugin) & Record<string, any>;
 export * from './src/type-list';

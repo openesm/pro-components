@@ -1,5 +1,4 @@
-import { ExtractPropTypes, PropType, StyleValue } from 'vue';
-
+import type { ExtractPropTypes, PropType, StyleValue } from 'vue';
 export declare const sdPageProps: {
     readonly lockScroll: {
         readonly type: BooleanConstructor;

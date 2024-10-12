@@ -1,7 +1,10 @@
-import { ComponentPublicInstance, VNode } from 'vue';
-import { SdDialogProps } from '../components/dialog';
-import { SdDrawerProps } from '../components/drawer';
-
+/**
+ * v24.03.17
+ * 方法调用弹窗
+ */
+import type { ComponentPublicInstance, VNode } from 'vue';
+import type { SdDialogProps } from '../components/dialog';
+import type { SdDrawerProps } from '../components/drawer';
 interface ExtraOptions {
     appContext?: any;
     appendTo?: HTMLElement | (() => HTMLElement);

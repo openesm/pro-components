@@ -1,7 +1,6 @@
-import { PropType, ExtractPublicPropTypes } from 'vue';
-import { SdWaterflowTypes } from './types';
-import { ScrollbarProps } from 'element-plus';
-
+import type { PropType, ExtractPublicPropTypes } from 'vue';
+import type { SdWaterflowTypes } from './types';
+import type { ScrollbarProps } from 'element-plus';
 export declare const sdWaterflowProps: {
     list: {
         type: PropType<SdWaterflowTypes.WaterflowItem[]>;

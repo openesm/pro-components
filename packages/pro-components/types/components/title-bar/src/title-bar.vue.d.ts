@@ -1,10 +1,10 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     type: {
-        type: import('vue').PropType<import('../../../types').ComponentTypes>;
+        type: import("vue").PropType<import("../../../types").ComponentTypes>;
         default: string;
     };
     icon: {
-        type: import('vue').PropType<import('vue').Component>;
+        type: import("vue").PropType<import("vue").Component>;
     };
     iconColor: {
         type: StringConstructor;
@@ -32,21 +32,21 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
     };
     headStyle: {
-        type: import('vue').PropType<import('vue').StyleValue>;
+        type: import("vue").PropType<import("vue").StyleValue>;
     };
     bodyClass: {
         type: StringConstructor;
     };
     bodyStyle: {
-        type: import('vue').PropType<import('vue').StyleValue>;
+        type: import("vue").PropType<import("vue").StyleValue>;
     };
-}, unknown, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, unknown, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     type: {
-        type: import('vue').PropType<import('../../../types').ComponentTypes>;
+        type: import("vue").PropType<import("../../../types").ComponentTypes>;
         default: string;
     };
     icon: {
-        type: import('vue').PropType<import('vue').Component>;
+        type: import("vue").PropType<import("vue").Component>;
     };
     iconColor: {
         type: StringConstructor;
@@ -74,20 +74,20 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
     };
     headStyle: {
-        type: import('vue').PropType<import('vue').StyleValue>;
+        type: import("vue").PropType<import("vue").StyleValue>;
     };
     bodyClass: {
         type: StringConstructor;
     };
     bodyStyle: {
-        type: import('vue').PropType<import('vue').StyleValue>;
+        type: import("vue").PropType<import("vue").StyleValue>;
     };
 }>> & {
     [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
 }, {
     title: string;
     subTitle: string;
-    type: import('../../../types').ComponentTypes;
+    type: import("../../../types").ComponentTypes;
     desc: string;
     arrow: boolean;
 }, {}>;

@@ -1,6 +1,5 @@
-import { ExtractPublicPropTypes, PropType, StyleValue, Component } from 'vue';
-import { ComponentTypes } from '../../../types';
-
+import type { ExtractPublicPropTypes, PropType, StyleValue, Component } from 'vue';
+import type { ComponentTypes } from '../../../types';
 export declare const sdTitleBarProps: {
     type: {
         type: PropType<ComponentTypes>;

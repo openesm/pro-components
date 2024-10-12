@@ -1,10 +1,10 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     autoActive: {
         type: BooleanConstructor;
         default: boolean;
     };
     activedItem: {
-        type: import('vue').PropType<Record<string, any> | null>;
+        type: import("vue").PropType<Record<string, any> | null>;
         default: null;
     };
     disabled: {
@@ -12,7 +12,7 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     width: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
         default: number;
     };
     title: {
@@ -28,7 +28,7 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     headerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     headerBorderd: {
         type: BooleanConstructor;
@@ -43,24 +43,24 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     footerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     footerBorderd: {
         type: BooleanConstructor;
         default: boolean;
     };
     itemStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     operations: {
-        type: import('vue').PropType<import("./types").SdCategoryListTypes.OperationItem<any>[]>;
+        type: import("vue").PropType<import("./types").SdCategoryListTypes.OperationItem<any>[]>;
     };
     data: {
-        type: import('vue').PropType<any[]>;
+        type: import("vue").PropType<any[]>;
         default: () => never[];
     };
     prop: {
-        type: import('vue').PropType<import("./types").SdCategoryListTypes.Prop>;
+        type: import("vue").PropType<import("./types").SdCategoryListTypes.Prop>;
     };
     filterMethod: {
         type: FunctionConstructor;
@@ -77,30 +77,30 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
     };
     emptyStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     emptyConfig: {
-        type: import('vue').PropType<Partial<import('element-plus').EmptyProps>>;
+        type: import("vue").PropType<Partial<import("element-plus").EmptyProps>>;
     };
     scrollbarConfig: {
-        type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+        type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
     };
     enableDargSort: {
         type: BooleanConstructor;
         default: boolean;
     };
     dargSortConfig: {
-        type: import('vue').PropType<any>;
+        type: import("vue").PropType<any>;
     };
 }, {
-    scrollbar_ref: import('vue').Ref<any>;
-    wrap_ref: import('vue').Ref<any>;
-    actived_item$: import('vue').WritableComputedRef<Record<string, any> | null>;
-    wrap_style$: import('vue').ComputedRef<{
+    scrollbar_ref: import("vue").Ref<any>;
+    wrap_ref: import("vue").Ref<any>;
+    actived_item$: import("vue").WritableComputedRef<Record<string, any> | null>;
+    wrap_style$: import("vue").ComputedRef<{
         width: string;
         minWidth: string;
     }>;
-    prop$: import('vue').ComputedRef<{
+    prop$: import("vue").ComputedRef<{
         label: string;
         value: string;
         icon: string;
@@ -114,16 +114,16 @@ declare const _default: import('vue').DefineComponent<{
     scrollIntoView: (active_item: any) => void;
     setActiveItem: (active_item: any) => void;
     restoreSort: () => void;
-    scroll_top: import('vue').Ref<number>;
-    list: import('vue').Ref<any>;
-    origin_list: import('vue').Ref<any[]>;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+    scroll_top: import("vue").Ref<number>;
+    list: import("vue").Ref<any>;
+    origin_list: import("vue").Ref<any[]>;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     autoActive: {
         type: BooleanConstructor;
         default: boolean;
     };
     activedItem: {
-        type: import('vue').PropType<Record<string, any> | null>;
+        type: import("vue").PropType<Record<string, any> | null>;
         default: null;
     };
     disabled: {
@@ -131,7 +131,7 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     width: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
         default: number;
     };
     title: {
@@ -147,7 +147,7 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     headerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     headerBorderd: {
         type: BooleanConstructor;
@@ -162,24 +162,24 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     footerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     footerBorderd: {
         type: BooleanConstructor;
         default: boolean;
     };
     itemStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     operations: {
-        type: import('vue').PropType<import("./types").SdCategoryListTypes.OperationItem<any>[]>;
+        type: import("vue").PropType<import("./types").SdCategoryListTypes.OperationItem<any>[]>;
     };
     data: {
-        type: import('vue').PropType<any[]>;
+        type: import("vue").PropType<any[]>;
         default: () => never[];
     };
     prop: {
-        type: import('vue').PropType<import("./types").SdCategoryListTypes.Prop>;
+        type: import("vue").PropType<import("./types").SdCategoryListTypes.Prop>;
     };
     filterMethod: {
         type: FunctionConstructor;
@@ -196,20 +196,20 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
     };
     emptyStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     emptyConfig: {
-        type: import('vue').PropType<Partial<import('element-plus').EmptyProps>>;
+        type: import("vue").PropType<Partial<import("element-plus").EmptyProps>>;
     };
     scrollbarConfig: {
-        type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+        type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
     };
     enableDargSort: {
         type: BooleanConstructor;
         default: boolean;
     };
     dargSortConfig: {
-        type: import('vue').PropType<any>;
+        type: import("vue").PropType<any>;
     };
 }>> & {
     [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;

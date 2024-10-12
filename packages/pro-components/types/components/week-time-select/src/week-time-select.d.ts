@@ -1,5 +1,4 @@
-import { ExtractPublicPropTypes } from 'vue';
-
+import type { ExtractPublicPropTypes } from 'vue';
 export declare const sdWeekTimeSelectProps: {
     modelValue: {
         type: StringConstructor;

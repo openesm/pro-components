@@ -1,5 +1,4 @@
-import { CSSProperties, ExtractPublicPropTypes, PropType } from 'vue';
-
+import type { CSSProperties, ExtractPublicPropTypes, PropType } from 'vue';
 export declare const sdImageProps: {
     width: {
         type: PropType<string | number>;
@@ -48,7 +47,7 @@ export declare const sdImageProps: {
     };
     fit: {
         default: string;
-        type: PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
+        type: PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
         required: false;
         validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
@@ -57,21 +56,21 @@ export declare const sdImageProps: {
         default: boolean;
         prototype: Boolean;
     };
-    src: import('element-plus/es/utils/index.mjs').EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
+    src: import("element-plus/es/utils/index.mjs").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
     loading: {
-        readonly type: PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
+        readonly type: PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
     lazy: BooleanConstructor;
     scrollContainer: {
-        readonly type: PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
+        readonly type: PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
-    previewSrcList: import('element-plus/es/utils/index.mjs').EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
+    previewSrcList: import("element-plus/es/utils/index.mjs").EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
     previewTeleported: BooleanConstructor;
     zIndex: {
         readonly type: PropType<number>;
@@ -79,12 +78,12 @@ export declare const sdImageProps: {
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
-    initialIndex: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
-    infinite: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-    closeOnPressEscape: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-    zoomRate: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
-    minScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
-    maxScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
+    initialIndex: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
+    infinite: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+    closeOnPressEscape: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+    zoomRate: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
+    minScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
+    maxScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
 };
 export declare const sdImageEmits: {
     load: (evt: Event) => boolean;

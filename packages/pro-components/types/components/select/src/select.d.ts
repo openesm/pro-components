@@ -1,6 +1,5 @@
-import { ExtractPublicPropTypes, PropType, Component } from 'vue';
-import { ComponentSizes, OptionComponentTypes } from '../../../types';
-
+import type { ExtractPublicPropTypes, PropType, Component } from 'vue';
+import type { ComponentSizes, OptionComponentTypes } from '../../../types';
 export declare const sdSelectProps: {
     group: {
         type: BooleanConstructor;
@@ -71,7 +70,7 @@ export declare const sdSelectProps: {
         type: BooleanConstructor;
         default: undefined;
     };
-    teleported: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+    teleported: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
     persistent: {
         type: BooleanConstructor;
         default: boolean;
@@ -88,7 +87,7 @@ export declare const sdSelectProps: {
     };
     tagType: {
         default: string;
-        type: PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>>;
+        type: PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>>;
         required: false;
         validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;

@@ -1,8 +1,7 @@
-import { SdWaterflowTypes } from './types';
-
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
+import type { SdWaterflowTypes } from './types';
+declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{
     list: {
-        type: import('vue').PropType<SdWaterflowTypes.WaterflowItem[]>;
+        type: import("vue").PropType<SdWaterflowTypes.WaterflowItem[]>;
         default: () => never[];
     };
     column: {
@@ -26,7 +25,7 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
         default: boolean;
     };
     scrollbarConfig: {
-        type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+        type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
     };
     loadmore: {
         type: FunctionConstructor;
@@ -39,11 +38,11 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
         type: NumberConstructor;
         default: number;
     };
-}, {}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+}, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     [x: string]: (...args: any[]) => void;
-}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     list: {
-        type: import('vue').PropType<SdWaterflowTypes.WaterflowItem[]>;
+        type: import("vue").PropType<SdWaterflowTypes.WaterflowItem[]>;
         default: () => never[];
     };
     column: {
@@ -67,7 +66,7 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
         default: boolean;
     };
     scrollbarConfig: {
-        type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+        type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
     };
     loadmore: {
         type: FunctionConstructor;

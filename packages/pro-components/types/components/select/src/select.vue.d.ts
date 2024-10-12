@@ -1,13 +1,13 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     group: {
         type: BooleanConstructor;
     };
     options: {
-        type: import('vue').PropType<import("../../../types").OptionComponentTypes.item[]>;
+        type: import("vue").PropType<import("../../../types").OptionComponentTypes.item[]>;
         default: () => never[];
     };
     prop: {
-        type: import('vue').PropType<import("../../../types").OptionComponentTypes.PropConfig>;
+        type: import("vue").PropType<import("../../../types").OptionComponentTypes.PropConfig>;
     };
     modelValue: {
         type: (StringConstructor | ObjectConstructor | BooleanConstructor | NumberConstructor | ArrayConstructor)[];
@@ -21,10 +21,10 @@ declare const _default: import('vue').DefineComponent<{
     };
     automaticDropdown: BooleanConstructor;
     size: {
-        type: import('vue').PropType<import('../../../types').ComponentSizes>;
+        type: import("vue").PropType<import("../../../types").ComponentSizes>;
     };
     effect: {
-        type: import('vue').PropType<string>;
+        type: import("vue").PropType<string>;
         default: string;
     };
     disabled: BooleanConstructor;
@@ -68,47 +68,47 @@ declare const _default: import('vue').DefineComponent<{
         type: BooleanConstructor;
         default: undefined;
     };
-    teleported: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+    teleported: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
     persistent: {
         type: BooleanConstructor;
         default: boolean;
     };
     clearIcon: {
-        type: import('vue').PropType<string | import('vue').Component>;
+        type: import("vue").PropType<string | import("vue").Component>;
     };
     fitInputWidth: {
         type: BooleanConstructor;
         default: boolean;
     };
     suffixIcon: {
-        type: import('vue').PropType<string | import('vue').Component>;
+        type: import("vue").PropType<string | import("vue").Component>;
     };
     tagType: {
         default: string;
-        type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>>;
+        type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>>;
         required: false;
         validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
 }, {
-    internal_value$: import('vue').WritableComputedRef<string | number | boolean | unknown[] | Record<string, any> | undefined>;
-    select_props$: import('vue').ComputedRef<any>;
-    prop$: import('vue').ComputedRef<{
+    internal_value$: import("vue").WritableComputedRef<string | number | boolean | unknown[] | Record<string, any> | undefined>;
+    select_props$: import("vue").ComputedRef<any>;
+    prop$: import("vue").ComputedRef<{
         label: string;
         value: string;
         disabled: string;
     }>;
     onChange: (val: string | number) => void;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     group: {
         type: BooleanConstructor;
     };
     options: {
-        type: import('vue').PropType<import("../../../types").OptionComponentTypes.item[]>;
+        type: import("vue").PropType<import("../../../types").OptionComponentTypes.item[]>;
         default: () => never[];
     };
     prop: {
-        type: import('vue').PropType<import("../../../types").OptionComponentTypes.PropConfig>;
+        type: import("vue").PropType<import("../../../types").OptionComponentTypes.PropConfig>;
     };
     modelValue: {
         type: (StringConstructor | ObjectConstructor | BooleanConstructor | NumberConstructor | ArrayConstructor)[];
@@ -122,10 +122,10 @@ declare const _default: import('vue').DefineComponent<{
     };
     automaticDropdown: BooleanConstructor;
     size: {
-        type: import('vue').PropType<import('../../../types').ComponentSizes>;
+        type: import("vue").PropType<import("../../../types").ComponentSizes>;
     };
     effect: {
-        type: import('vue').PropType<string>;
+        type: import("vue").PropType<string>;
         default: string;
     };
     disabled: BooleanConstructor;
@@ -169,24 +169,24 @@ declare const _default: import('vue').DefineComponent<{
         type: BooleanConstructor;
         default: undefined;
     };
-    teleported: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+    teleported: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
     persistent: {
         type: BooleanConstructor;
         default: boolean;
     };
     clearIcon: {
-        type: import('vue').PropType<string | import('vue').Component>;
+        type: import("vue").PropType<string | import("vue").Component>;
     };
     fitInputWidth: {
         type: BooleanConstructor;
         default: boolean;
     };
     suffixIcon: {
-        type: import('vue').PropType<string | import('vue').Component>;
+        type: import("vue").PropType<string | import("vue").Component>;
     };
     tagType: {
         default: string;
-        type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>>;
+        type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>>;
         required: false;
         validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
@@ -197,7 +197,7 @@ declare const _default: import('vue').DefineComponent<{
     group: boolean;
     disabled: boolean;
     persistent: boolean;
-    teleported: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+    teleported: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
     effect: string;
     popperClass: string;
     modelValue: string | number | boolean | unknown[] | Record<string, any>;
@@ -218,6 +218,6 @@ declare const _default: import('vue').DefineComponent<{
     collapseTags: boolean;
     popperAppendToBody: boolean;
     fitInputWidth: boolean;
-    tagType: import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>;
+    tagType: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "success" | "warning" | "danger" | "info", unknown>;
 }, {}>;
 export default _default;

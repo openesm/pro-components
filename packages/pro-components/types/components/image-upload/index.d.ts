@@ -1,17 +1,17 @@
 /// <reference types="@types/node" />
 export declare const SdImageUpload: ({
     new (...args: any[]): {
-        $: import('vue').ComponentInternalInstance;
+        $: import("vue").ComponentInternalInstance;
         $data: {};
         $props: Partial<{
             readonly height: string | number;
             readonly disabled: boolean;
             readonly name: string;
-            readonly data: import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | (() => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | ((new (...args: any[]) => import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)) | (() => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)))[], unknown, unknown>;
+            readonly data: import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | (() => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | ((new (...args: any[]) => import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)) | (() => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)))[], unknown, unknown>;
             readonly circle: boolean;
             readonly width: string | number;
             readonly modelValue: string;
-            readonly drag: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+            readonly drag: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
             readonly placeholder: string;
             readonly defaultValue: string;
             readonly transform: Function;
@@ -27,11 +27,11 @@ export declare const SdImageUpload: ({
             readonly height: string | number;
             readonly disabled: boolean;
             readonly name: string;
-            readonly data: import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | (() => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | ((new (...args: any[]) => import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)) | (() => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)))[], unknown, unknown>;
+            readonly data: import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | (() => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | ((new (...args: any[]) => import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)) | (() => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)))[], unknown, unknown>;
             readonly circle: boolean;
             readonly width: string | number;
             readonly modelValue: string;
-            readonly drag: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+            readonly drag: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
             readonly placeholder: string;
             readonly defaultValue: string;
             readonly transform: Function;
@@ -44,9 +44,9 @@ export declare const SdImageUpload: ({
             readonly api: Function;
             readonly autoUpload: boolean;
             readonly onError?: Function | undefined;
-            readonly placeholderStyle?: import('vue').CSSProperties | undefined;
-            readonly tipStyle?: import('vue').CSSProperties | undefined;
-            readonly imageProps?: import('element-plus').ImageProps | undefined;
+            readonly placeholderStyle?: import("vue").CSSProperties | undefined;
+            readonly tipStyle?: import("vue").CSSProperties | undefined;
+            readonly imageProps?: import("element-plus").ImageProps | undefined;
             readonly imageCropperProps?: {
                 height?: number | undefined;
                 circle?: boolean | undefined;
@@ -61,14 +61,14 @@ export declare const SdImageUpload: ({
                 showChooseFile?: boolean | undefined;
                 showPreview?: boolean | undefined;
                 previewTitle?: string | undefined;
-                previewTitleStyle?: import('vue').CSSProperties | undefined;
+                previewTitleStyle?: import("vue").CSSProperties | undefined;
                 previewSizes?: number[] | undefined;
             } | undefined;
             readonly limitSize?: number | undefined;
             readonly onOverflowSize?: Function | undefined;
             readonly onSuccess?: Function | undefined;
             readonly beforeUpload?: Function | undefined;
-        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & Readonly<import('vue').ExtractPropTypes<{
+        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & Readonly<import("vue").ExtractPropTypes<{
             readonly modelValue: {
                 type: StringConstructor;
                 default: string;
@@ -94,7 +94,7 @@ export declare const SdImageUpload: ({
                 default: string;
             };
             readonly tipStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             readonly placeholder: {
                 type: StringConstructor;
@@ -105,7 +105,7 @@ export declare const SdImageUpload: ({
                 default: number;
             };
             readonly placeholderStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             readonly circle: {
                 type: BooleanConstructor;
@@ -119,14 +119,14 @@ export declare const SdImageUpload: ({
                 default: boolean;
             };
             readonly imageProps: {
-                type: import('vue').PropType<import('element-plus').ImageProps>;
+                type: import("vue").PropType<import("element-plus").ImageProps>;
             };
             readonly enableCropper: {
                 type: BooleanConstructor;
                 default: boolean;
             };
             readonly imageCropperProps: {
-                type: import('vue').PropType<import('..').SdCropperProps>;
+                type: import("vue").PropType<import("..").SdCropperProps>;
             };
             readonly limitSize: {
                 type: NumberConstructor;
@@ -160,14 +160,14 @@ export declare const SdImageUpload: ({
                 default: string;
             };
             readonly data: {
-                type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | (() => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | ((new (...args: any[]) => import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)) | (() => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)))[], unknown, unknown>>;
+                type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | (() => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | ((new (...args: any[]) => import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)) | (() => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)))[], unknown, unknown>>;
                 required: false;
                 validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
-                default: () => import('element-plus/es/utils/typescript.mjs').Mutable<{}>;
+                default: () => import("element-plus/es/utils/typescript.mjs").Mutable<{}>;
             };
             readonly disabled: BooleanConstructor;
-            readonly drag: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
+            readonly drag: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
         }>>, "height" | "disabled" | "name" | "data" | "circle" | "width" | "modelValue" | "drag" | "placeholder" | "defaultValue" | "transform" | "placeholderIconSize" | "progressWidth" | "tip" | "showPreviewButton" | "showDeleteButton" | "enableCropper" | "api" | "autoUpload">;
         $attrs: {
             [x: string]: unknown;
@@ -176,13 +176,13 @@ export declare const SdImageUpload: ({
             [x: string]: unknown;
         };
         $slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
-        $root: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
-        $parent: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $root: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $parent: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
         $emit: (event: string, ...args: any[]) => void;
         $el: any;
-        $options: import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+        $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
             readonly modelValue: {
                 type: StringConstructor;
                 default: string;
@@ -208,7 +208,7 @@ export declare const SdImageUpload: ({
                 default: string;
             };
             readonly tipStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             readonly placeholder: {
                 type: StringConstructor;
@@ -219,7 +219,7 @@ export declare const SdImageUpload: ({
                 default: number;
             };
             readonly placeholderStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             readonly circle: {
                 type: BooleanConstructor;
@@ -233,14 +233,14 @@ export declare const SdImageUpload: ({
                 default: boolean;
             };
             readonly imageProps: {
-                type: import('vue').PropType<import('element-plus').ImageProps>;
+                type: import("vue").PropType<import("element-plus").ImageProps>;
             };
             readonly enableCropper: {
                 type: BooleanConstructor;
                 default: boolean;
             };
             readonly imageCropperProps: {
-                type: import('vue').PropType<import('..').SdCropperProps>;
+                type: import("vue").PropType<import("..").SdCropperProps>;
             };
             readonly limitSize: {
                 type: NumberConstructor;
@@ -274,14 +274,14 @@ export declare const SdImageUpload: ({
                 default: string;
             };
             readonly data: {
-                type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | (() => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | ((new (...args: any[]) => import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)) | (() => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)))[], unknown, unknown>>;
+                type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | (() => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | ((new (...args: any[]) => import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)) | (() => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)))[], unknown, unknown>>;
                 required: false;
                 validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
-                default: () => import('element-plus/es/utils/typescript.mjs').Mutable<{}>;
+                default: () => import("element-plus/es/utils/typescript.mjs").Mutable<{}>;
             };
             readonly disabled: BooleanConstructor;
-            readonly drag: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
+            readonly drag: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
         }>>, {
             reset: () => void;
             clear: () => void;
@@ -306,17 +306,17 @@ export declare const SdImageUpload: ({
                     (): Promise<string>;
                 };
             } | null;
-        }, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+        }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
             [x: string]: (...args: any[]) => void;
         }, string, {
             readonly height: string | number;
             readonly disabled: boolean;
             readonly name: string;
-            readonly data: import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | (() => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | ((new (...args: any[]) => import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)) | (() => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)))[], unknown, unknown>;
+            readonly data: import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | (() => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | ((new (...args: any[]) => import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)) | (() => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)))[], unknown, unknown>;
             readonly circle: boolean;
             readonly width: string | number;
             readonly modelValue: string;
-            readonly drag: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+            readonly drag: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
             readonly placeholder: string;
             readonly defaultValue: string;
             readonly transform: Function;
@@ -341,14 +341,14 @@ export declare const SdImageUpload: ({
             beforeUnmount?: ((() => void) | (() => void)[]) | undefined;
             destroyed?: ((() => void) | (() => void)[]) | undefined;
             unmounted?: ((() => void) | (() => void)[]) | undefined;
-            renderTracked?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            renderTriggered?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            errorCaptured?: (((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
+            renderTracked?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            renderTriggered?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            errorCaptured?: (((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
         };
         $forceUpdate: () => void;
-        $nextTick: typeof import('vue').nextTick;
-        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import('vue').WatchOptions<boolean> | undefined): import('vue').WatchStopHandle;
-    } & Readonly<import('vue').ExtractPropTypes<{
+        $nextTick: typeof import("vue").nextTick;
+        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import("vue").WatchOptions<boolean> | undefined): import("vue").WatchStopHandle;
+    } & Readonly<import("vue").ExtractPropTypes<{
         readonly modelValue: {
             type: StringConstructor;
             default: string;
@@ -374,7 +374,7 @@ export declare const SdImageUpload: ({
             default: string;
         };
         readonly tipStyle: {
-            type: import('vue').PropType<import('vue').CSSProperties>;
+            type: import("vue").PropType<import("vue").CSSProperties>;
         };
         readonly placeholder: {
             type: StringConstructor;
@@ -385,7 +385,7 @@ export declare const SdImageUpload: ({
             default: number;
         };
         readonly placeholderStyle: {
-            type: import('vue').PropType<import('vue').CSSProperties>;
+            type: import("vue").PropType<import("vue").CSSProperties>;
         };
         readonly circle: {
             type: BooleanConstructor;
@@ -399,14 +399,14 @@ export declare const SdImageUpload: ({
             default: boolean;
         };
         readonly imageProps: {
-            type: import('vue').PropType<import('element-plus').ImageProps>;
+            type: import("vue").PropType<import("element-plus").ImageProps>;
         };
         readonly enableCropper: {
             type: BooleanConstructor;
             default: boolean;
         };
         readonly imageCropperProps: {
-            type: import('vue').PropType<import('..').SdCropperProps>;
+            type: import("vue").PropType<import("..").SdCropperProps>;
         };
         readonly limitSize: {
             type: NumberConstructor;
@@ -440,15 +440,15 @@ export declare const SdImageUpload: ({
             default: string;
         };
         readonly data: {
-            type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | (() => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | ((new (...args: any[]) => import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)) | (() => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)))[], unknown, unknown>>;
+            type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | (() => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | ((new (...args: any[]) => import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)) | (() => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)))[], unknown, unknown>>;
             required: false;
             validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
-            default: () => import('element-plus/es/utils/typescript.mjs').Mutable<{}>;
+            default: () => import("element-plus/es/utils/typescript.mjs").Mutable<{}>;
         };
         readonly disabled: BooleanConstructor;
-        readonly drag: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
-    }>> & import('vue').ShallowUnwrapRef<{
+        readonly drag: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
+    }>> & import("vue").ShallowUnwrapRef<{
         reset: () => void;
         clear: () => void;
         submit: (file: File | Blob) => Promise<void>;
@@ -472,11 +472,11 @@ export declare const SdImageUpload: ({
                 (): Promise<string>;
             };
         } | null;
-    }> & {} & import('vue').ComponentCustomProperties & {};
+    }> & {} & import("vue").ComponentCustomProperties & {};
     __isFragment?: undefined;
     __isTeleport?: undefined;
     __isSuspense?: undefined;
-} & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+} & import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
     readonly modelValue: {
         type: StringConstructor;
         default: string;
@@ -502,7 +502,7 @@ export declare const SdImageUpload: ({
         default: string;
     };
     readonly tipStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     readonly placeholder: {
         type: StringConstructor;
@@ -513,7 +513,7 @@ export declare const SdImageUpload: ({
         default: number;
     };
     readonly placeholderStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     readonly circle: {
         type: BooleanConstructor;
@@ -527,14 +527,14 @@ export declare const SdImageUpload: ({
         default: boolean;
     };
     readonly imageProps: {
-        type: import('vue').PropType<import('element-plus').ImageProps>;
+        type: import("vue").PropType<import("element-plus").ImageProps>;
     };
     readonly enableCropper: {
         type: BooleanConstructor;
         default: boolean;
     };
     readonly imageCropperProps: {
-        type: import('vue').PropType<import('..').SdCropperProps>;
+        type: import("vue").PropType<import("..").SdCropperProps>;
     };
     readonly limitSize: {
         type: NumberConstructor;
@@ -568,14 +568,14 @@ export declare const SdImageUpload: ({
         default: string;
     };
     readonly data: {
-        type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | (() => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | ((new (...args: any[]) => import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)) | (() => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)))[], unknown, unknown>>;
+        type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | (() => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | ((new (...args: any[]) => import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)) | (() => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)))[], unknown, unknown>>;
         required: false;
         validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
-        default: () => import('element-plus/es/utils/typescript.mjs').Mutable<{}>;
+        default: () => import("element-plus/es/utils/typescript.mjs").Mutable<{}>;
     };
     readonly disabled: BooleanConstructor;
-    readonly drag: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
+    readonly drag: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
 }>>, {
     reset: () => void;
     clear: () => void;
@@ -600,17 +600,17 @@ export declare const SdImageUpload: ({
             (): Promise<string>;
         };
     } | null;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     [x: string]: (...args: any[]) => void;
 }, string, {
     readonly height: string | number;
     readonly disabled: boolean;
     readonly name: string;
-    readonly data: import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | (() => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | ((new (...args: any[]) => import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)) | (() => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)))[], unknown, unknown>;
+    readonly data: import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | (() => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | ((new (...args: any[]) => import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)) | (() => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)))[], unknown, unknown>;
     readonly circle: boolean;
     readonly width: string | number;
     readonly modelValue: string;
-    readonly drag: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+    readonly drag: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
     readonly placeholder: string;
     readonly defaultValue: string;
     readonly transform: Function;
@@ -622,10 +622,10 @@ export declare const SdImageUpload: ({
     readonly enableCropper: boolean;
     readonly api: Function;
     readonly autoUpload: boolean;
-}, {}, string, {}> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & (new () => {
+}, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & (new () => {
     $slots: {
         placeholder?(_: {}): any;
         tip?(_: {}): any;
     };
-}) & import('vue').Plugin) & Record<string, any>;
+}) & import("vue").Plugin) & Record<string, any>;
 export * from './src/image-upload';

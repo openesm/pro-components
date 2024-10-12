@@ -1,5 +1,4 @@
-import { Component } from 'vue';
-
+import type { Component } from 'vue';
 /** 坐标 */
 export interface Axis {
     x: number;

@@ -1,5 +1,8 @@
-import { SdCropperProps } from '../components/cropper/src/cropper';
-
+/**
+ * 图片裁剪方法调用
+ * v24.04.29
+ */
+import type { SdCropperProps } from '../components/cropper/src/cropper';
 type OpenImageCropperDialogOptions = {
     title?: string;
     confirmButtonText?: string;

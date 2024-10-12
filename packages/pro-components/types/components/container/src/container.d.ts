@@ -1,6 +1,5 @@
-import { ExtractPublicPropTypes, PropType, StyleValue } from 'vue';
-import { ScrollbarProps } from 'element-plus';
-
+import type { ExtractPublicPropTypes, PropType, StyleValue } from 'vue';
+import type { ScrollbarProps } from 'element-plus';
 export declare const sdContainerProps: {
     readonly lockScroll: {
         readonly type: BooleanConstructor;

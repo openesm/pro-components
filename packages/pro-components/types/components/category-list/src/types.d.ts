@@ -1,5 +1,4 @@
-import { Component } from 'vue';
-
+import type { Component } from 'vue';
 export declare namespace SdCategoryListTypes {
     interface Prop {
         label?: string;

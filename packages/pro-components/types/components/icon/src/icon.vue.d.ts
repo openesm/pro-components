@@ -1,4 +1,4 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     prefix: {
         type: StringConstructor;
     };
@@ -15,9 +15,9 @@ declare const _default: import('vue').DefineComponent<{
         type: BooleanConstructor;
     };
 }, {
-    is_svg_icon$: import('vue').ComputedRef<boolean | undefined>;
-    svg_icon_name$: import('vue').ComputedRef<string | undefined>;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+    is_svg_icon$: import("vue").ComputedRef<boolean | undefined>;
+    svg_icon_name$: import("vue").ComputedRef<string | undefined>;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     prefix: {
         type: StringConstructor;
     };

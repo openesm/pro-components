@@ -1,5 +1,8 @@
-import { Ref } from 'vue';
-
+/**
+ * v23.11.12
+ * 设置水印
+ */
+import type { Ref } from 'vue';
 interface WatermarkAttr {
     font?: string;
     fillStyle?: string;

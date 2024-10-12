@@ -1,5 +1,4 @@
-import { ExtractPublicPropTypes, PropType } from 'vue';
-
+import type { ExtractPublicPropTypes, PropType } from 'vue';
 export declare const sdVirtualListProps: {
     height: {
         type: NumberConstructor;

@@ -1,6 +1,5 @@
-import { ExtractPublicPropTypes, PropType } from 'vue';
-import { ComponentTypes } from '../../../types';
-
+import type { ExtractPublicPropTypes, PropType } from 'vue';
+import type { ComponentTypes } from '../../../types';
 export declare const sdStatusProps: {
     type: {
         type: PropType<ComponentTypes>;

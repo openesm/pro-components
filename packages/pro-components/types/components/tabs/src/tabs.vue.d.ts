@@ -1,16 +1,15 @@
-import { TabPaneName, TabsPaneContext, TabsProps } from 'element-plus';
-
-declare const _default: import('vue').DefineComponent<{
+import type { TabPaneName, TabsPaneContext, TabsProps } from 'element-plus';
+declare const _default: import("vue").DefineComponent<{
     options: {
-        type: import('vue').PropType<import("../../../types").OptionComponentTypes.item[]>;
+        type: import("vue").PropType<import("../../../types").OptionComponentTypes.item[]>;
         default: () => never[];
     };
     prop: {
-        type: import('vue').PropType<import("../../../types").OptionComponentTypes.PropConfig>;
+        type: import("vue").PropType<import("../../../types").OptionComponentTypes.PropConfig>;
     };
-    type: import('element-plus/es/utils/index.mjs').EpPropFinalized<StringConstructor, "" | "card" | "border-card", unknown, "", boolean>;
+    type: import("element-plus/es/utils/index.mjs").EpPropFinalized<StringConstructor, "" | "card" | "border-card", unknown, "", boolean>;
     activeName: {
-        readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>>;
+        readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
@@ -18,41 +17,41 @@ declare const _default: import('vue').DefineComponent<{
     closable: BooleanConstructor;
     addable: BooleanConstructor;
     modelValue: {
-        readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>>;
+        readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
     editable: BooleanConstructor;
-    tabPosition: import('element-plus/es/utils/index.mjs').EpPropFinalized<StringConstructor, "bottom" | "top" | "left" | "right", unknown, "top", boolean>;
-    beforeLeave: import('element-plus/es/utils/index.mjs').EpPropFinalized<(new (...args: any[]) => (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>) | (() => (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>) | {
-        (): (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>;
+    tabPosition: import("element-plus/es/utils/index.mjs").EpPropFinalized<StringConstructor, "bottom" | "top" | "left" | "right", unknown, "top", boolean>;
+    beforeLeave: import("element-plus/es/utils/index.mjs").EpPropFinalized<(new (...args: any[]) => (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>) | (() => (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>) | {
+        (): (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>;
         new (): any;
         readonly prototype: any;
-    } | ((new (...args: any[]) => (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>) | (() => (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>) | {
-        (): (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>;
+    } | ((new (...args: any[]) => (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>) | (() => (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>) | {
+        (): (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>;
         new (): any;
         readonly prototype: any;
     })[], unknown, unknown, () => true, boolean>;
     stretch: BooleanConstructor;
 }, {
-    internal_value$: import('vue').WritableComputedRef<import('element-plus/es/utils/index.mjs').EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined>;
-    tabs_props$: import('vue').ComputedRef<TabsProps>;
-    options$: import('vue').ComputedRef<any[]>;
+    internal_value$: import("vue").WritableComputedRef<import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined>;
+    tabs_props$: import("vue").ComputedRef<TabsProps>;
+    options$: import("vue").ComputedRef<any[]>;
     onTabClick: (pane: TabsPaneContext, ev: Event) => void;
     onTabEdit: (paneName: TabPaneName | undefined, action: 'remove' | 'add') => void;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     'tab-click': (pane: {
         uid: number;
         slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
         props: {
             readonly disabled: boolean;
             readonly label: string;
             readonly lazy: boolean;
             readonly closable: boolean;
-            readonly name?: import('element-plus/es/utils/index.mjs').EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
+            readonly name?: import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
         };
         paneName: string | number | undefined;
         active: boolean;
@@ -63,14 +62,14 @@ declare const _default: import('vue').DefineComponent<{
     tabClick: (pane: {
         uid: number;
         slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
         props: {
             readonly disabled: boolean;
             readonly label: string;
             readonly lazy: boolean;
             readonly closable: boolean;
-            readonly name?: import('element-plus/es/utils/index.mjs').EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
+            readonly name?: import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
         };
         paneName: string | number | undefined;
         active: boolean;
@@ -81,17 +80,17 @@ declare const _default: import('vue').DefineComponent<{
     edit: (paneName: TabPaneName | undefined, action: "add" | "remove") => boolean;
     tabRemove: (name: TabPaneName) => boolean;
     tabAdd: () => boolean;
-}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     options: {
-        type: import('vue').PropType<import("../../../types").OptionComponentTypes.item[]>;
+        type: import("vue").PropType<import("../../../types").OptionComponentTypes.item[]>;
         default: () => never[];
     };
     prop: {
-        type: import('vue').PropType<import("../../../types").OptionComponentTypes.PropConfig>;
+        type: import("vue").PropType<import("../../../types").OptionComponentTypes.PropConfig>;
     };
-    type: import('element-plus/es/utils/index.mjs').EpPropFinalized<StringConstructor, "" | "card" | "border-card", unknown, "", boolean>;
+    type: import("element-plus/es/utils/index.mjs").EpPropFinalized<StringConstructor, "" | "card" | "border-card", unknown, "", boolean>;
     activeName: {
-        readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>>;
+        readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
@@ -99,19 +98,19 @@ declare const _default: import('vue').DefineComponent<{
     closable: BooleanConstructor;
     addable: BooleanConstructor;
     modelValue: {
-        readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>>;
+        readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
     editable: BooleanConstructor;
-    tabPosition: import('element-plus/es/utils/index.mjs').EpPropFinalized<StringConstructor, "bottom" | "top" | "left" | "right", unknown, "top", boolean>;
-    beforeLeave: import('element-plus/es/utils/index.mjs').EpPropFinalized<(new (...args: any[]) => (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>) | (() => (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>) | {
-        (): (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>;
+    tabPosition: import("element-plus/es/utils/index.mjs").EpPropFinalized<StringConstructor, "bottom" | "top" | "left" | "right", unknown, "top", boolean>;
+    beforeLeave: import("element-plus/es/utils/index.mjs").EpPropFinalized<(new (...args: any[]) => (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>) | (() => (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>) | {
+        (): (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>;
         new (): any;
         readonly prototype: any;
-    } | ((new (...args: any[]) => (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>) | (() => (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>) | {
-        (): (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>;
+    } | ((new (...args: any[]) => (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>) | (() => (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>) | {
+        (): (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>;
         new (): any;
         readonly prototype: any;
     })[], unknown, unknown, () => true, boolean>;
@@ -121,14 +120,14 @@ declare const _default: import('vue').DefineComponent<{
     "onTab-click"?: ((pane: {
         uid: number;
         slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
         props: {
             readonly disabled: boolean;
             readonly label: string;
             readonly lazy: boolean;
             readonly closable: boolean;
-            readonly name?: import('element-plus/es/utils/index.mjs').EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
+            readonly name?: import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
         };
         paneName: string | number | undefined;
         active: boolean;
@@ -138,14 +137,14 @@ declare const _default: import('vue').DefineComponent<{
     onTabClick?: ((pane: {
         uid: number;
         slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
         props: {
             readonly disabled: boolean;
             readonly label: string;
             readonly lazy: boolean;
             readonly closable: boolean;
-            readonly name?: import('element-plus/es/utils/index.mjs').EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
+            readonly name?: import("element-plus/es/utils/index.mjs").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown> | undefined;
         };
         paneName: string | number | undefined;
         active: boolean;
@@ -157,13 +156,13 @@ declare const _default: import('vue').DefineComponent<{
     onTabRemove?: ((name: TabPaneName) => any) | undefined;
     onTabAdd?: (() => any) | undefined;
 }, {
-    type: import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "card" | "border-card", unknown>;
+    type: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "card" | "border-card", unknown>;
     options: import("../../../types").OptionComponentTypes.item[];
     stretch: boolean;
     editable: boolean;
-    beforeLeave: (newName: TabPaneName, oldName: TabPaneName) => import('element-plus/es/utils/typescript.mjs').Awaitable<boolean | void>;
+    beforeLeave: (newName: TabPaneName, oldName: TabPaneName) => import("element-plus/es/utils/typescript.mjs").Awaitable<boolean | void>;
     closable: boolean;
     addable: boolean;
-    tabPosition: import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "bottom" | "top" | "left" | "right", unknown>;
+    tabPosition: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "bottom" | "top" | "left" | "right", unknown>;
 }, {}>;
 export default _default;

@@ -1,6 +1,5 @@
-import { ExtractPublicPropTypes } from 'vue';
-import { default as _CountTo } from './count-to.vue';
-
+import type { ExtractPublicPropTypes } from 'vue';
+import type _CountTo from './count-to.vue';
 export declare const sdCountToProps: {
     startVal: {
         type: NumberConstructor;

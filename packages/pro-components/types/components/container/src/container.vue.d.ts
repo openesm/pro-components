@@ -1,4 +1,4 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     readonly lockScroll: {
         readonly type: BooleanConstructor;
         readonly default: false;
@@ -16,22 +16,22 @@ declare const _default: import('vue').DefineComponent<{
         readonly type: StringConstructor;
     };
     readonly headerStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly titleStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly bodyClass: {
         readonly type: StringConstructor;
     };
     readonly bodyStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly renderContent: {
         readonly type: BooleanConstructor;
     };
     readonly contentStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly footerFixed: {
         readonly type: BooleanConstructor;
@@ -40,10 +40,10 @@ declare const _default: import('vue').DefineComponent<{
         readonly type: StringConstructor;
     };
     readonly footerStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly scrollbarConfig: {
-        readonly type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+        readonly type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
     };
     readonly loading: {
         readonly type: BooleanConstructor;
@@ -59,11 +59,11 @@ declare const _default: import('vue').DefineComponent<{
         readonly type: StringConstructor;
     };
 }, {
-    scroll_ref: import('vue').Ref<any>;
-    scrollbar_config$: import('vue').ComputedRef<{}>;
+    scroll_ref: import("vue").Ref<any>;
+    scrollbar_config$: import("vue").ComputedRef<{}>;
     scrollToTop: () => void;
-    IconRefresh: import('vue').DefineComponent<{}, {}, {}, import('vue').ComputedOptions, import('vue').MethodOptions, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{}>>, {}>;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+    IconRefresh: import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     readonly lockScroll: {
         readonly type: BooleanConstructor;
         readonly default: false;
@@ -81,22 +81,22 @@ declare const _default: import('vue').DefineComponent<{
         readonly type: StringConstructor;
     };
     readonly headerStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly titleStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly bodyClass: {
         readonly type: StringConstructor;
     };
     readonly bodyStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly renderContent: {
         readonly type: BooleanConstructor;
     };
     readonly contentStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly footerFixed: {
         readonly type: BooleanConstructor;
@@ -105,10 +105,10 @@ declare const _default: import('vue').DefineComponent<{
         readonly type: StringConstructor;
     };
     readonly footerStyle: {
-        readonly type: import('vue').PropType<import('vue').StyleValue>;
+        readonly type: import("vue").PropType<import("vue").StyleValue>;
     };
     readonly scrollbarConfig: {
-        readonly type: import('vue').PropType<Partial<import('element-plus').ScrollbarProps>>;
+        readonly type: import("vue").PropType<Partial<import("element-plus").ScrollbarProps>>;
     };
     readonly loading: {
         readonly type: BooleanConstructor;

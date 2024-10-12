@@ -1,6 +1,6 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     type: {
-        type: import('vue').PropType<"day" | "week" | "month" | "year">;
+        type: import("vue").PropType<"day" | "week" | "month" | "year">;
         default: string;
     };
     disabled: {
@@ -8,7 +8,7 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
 }, {
-    options$: import('vue').ComputedRef<{
+    options$: import("vue").ComputedRef<{
         prop: string;
         label: string;
     }[]>;
@@ -16,9 +16,9 @@ declare const _default: import('vue').DefineComponent<{
         prop: string;
         label: string;
     }) => void;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     type: {
-        type: import('vue').PropType<"day" | "week" | "month" | "year">;
+        type: import("vue").PropType<"day" | "week" | "month" | "year">;
         default: string;
     };
     disabled: {

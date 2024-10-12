@@ -1,5 +1,5 @@
-import { default as Cropper } from './cropper.esm';
-
+import Cropper from './cropper.esm';
+import 'cropperjs/dist/cropper.css';
 declare function cropperd(): Promise<void>;
 declare function getCroppedFile(): Promise<Blob | null>;
 declare function getRoundedCanvas(sourceCanvas: HTMLCanvasElement): HTMLCanvasElement | undefined;
@@ -8,7 +8,7 @@ declare function zoom(value: number): void;
 declare function rotate(value: number): void;
 declare function reset(): void;
 declare function getCropperInstance(): Cropper;
-declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
+declare const _default: __VLS_WithTemplateSlots<import("vue").DefineComponent<{
     src: {
         type: StringConstructor;
         default: string;
@@ -36,10 +36,10 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
         type: NumberConstructor;
     };
     outputConfig: {
-        type: import('vue').PropType<Cropper.GetCroppedCanvasOptions>;
+        type: import("vue").PropType<Cropper.GetCroppedCanvasOptions>;
     };
     cropperConfig: {
-        type: import('vue').PropType<Cropper.Options<EventTarget>>;
+        type: import("vue").PropType<Cropper.Options<EventTarget>>;
     };
     showTools: {
         type: BooleanConstructor;
@@ -58,10 +58,10 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
         default: string;
     };
     previewTitleStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     previewSizes: {
-        type: import('vue').PropType<number[]>;
+        type: import("vue").PropType<number[]>;
         default: () => never[];
     };
 }, {
@@ -73,9 +73,9 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
     getCropperInstance: typeof getCropperInstance;
     getCroppedFile: typeof getCroppedFile;
     cropperd: typeof cropperd;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     [x: string]: (...args: any[]) => void;
-}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     src: {
         type: StringConstructor;
         default: string;
@@ -103,10 +103,10 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
         type: NumberConstructor;
     };
     outputConfig: {
-        type: import('vue').PropType<Cropper.GetCroppedCanvasOptions>;
+        type: import("vue").PropType<Cropper.GetCroppedCanvasOptions>;
     };
     cropperConfig: {
-        type: import('vue').PropType<Cropper.Options<EventTarget>>;
+        type: import("vue").PropType<Cropper.Options<EventTarget>>;
     };
     showTools: {
         type: BooleanConstructor;
@@ -125,10 +125,10 @@ declare const _default: __VLS_WithTemplateSlots<import('vue').DefineComponent<{
         default: string;
     };
     previewTitleStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     previewSizes: {
-        type: import('vue').PropType<number[]>;
+        type: import("vue").PropType<number[]>;
         default: () => never[];
     };
 }>>, {

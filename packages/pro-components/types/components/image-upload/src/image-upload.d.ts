@@ -1,7 +1,6 @@
-import { ExtractPublicPropTypes, PropType, CSSProperties } from 'vue';
-import { ImageProps } from 'element-plus';
-import { SdCropperProps } from '../../cropper/src/cropper';
-
+import type { ExtractPublicPropTypes, PropType, CSSProperties } from 'vue';
+import type { ImageProps } from 'element-plus';
+import type { SdCropperProps } from '../../cropper/src/cropper';
 export declare const sdImageUploadProps: {
     readonly modelValue: {
         type: StringConstructor;
@@ -94,14 +93,14 @@ export declare const sdImageUploadProps: {
         default: string;
     };
     readonly data: {
-        type: PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | (() => ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>) | ((new (...args: any[]) => import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>> | Promise<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)) | (() => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>> | ((rawFile: import('element-plus').UploadRawFile) => import('element-plus/es/utils/typescript.mjs').Awaitable<import('element-plus/es/utils/typescript.mjs').Mutable<Record<string, any>>>)))[], unknown, unknown>>;
+        type: PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | (() => ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>) | ((new (...args: any[]) => import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>> | Promise<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)) | (() => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>> | ((rawFile: import("element-plus").UploadRawFile) => import("element-plus/es/utils/typescript.mjs").Awaitable<import("element-plus/es/utils/typescript.mjs").Mutable<Record<string, any>>>)))[], unknown, unknown>>;
         required: false;
         validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
-        default: () => import('element-plus/es/utils/typescript.mjs').Mutable<{}>;
+        default: () => import("element-plus/es/utils/typescript.mjs").Mutable<{}>;
     };
     readonly disabled: BooleanConstructor;
-    readonly drag: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
+    readonly drag: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
 };
 export declare const sdImageUploadEmits: string[];
 export declare const sdImageUploadOmitKeys: string[];

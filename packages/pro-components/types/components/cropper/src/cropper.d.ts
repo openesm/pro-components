@@ -1,7 +1,6 @@
-import { PropType, ExtractPublicPropTypes, CSSProperties } from 'vue';
-import { default as Cropper } from 'cropperjs';
-import { default as _Cropper } from './cropper.vue';
-
+import type { PropType, ExtractPublicPropTypes, CSSProperties } from 'vue';
+import type Cropper from 'cropperjs';
+import type _Cropper from './cropper.vue';
 export declare const sdCropperProps: {
     src: {
         type: StringConstructor;

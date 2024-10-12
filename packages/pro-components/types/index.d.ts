@@ -1,6 +1,5 @@
-import { App } from 'vue';
-import { DeepPartialGlobalConfig } from './config';
-
+import type { App } from 'vue';
+import { type DeepPartialGlobalConfig } from './config';
 export * from './hooks';
 export * from './directives';
 export * from './services';

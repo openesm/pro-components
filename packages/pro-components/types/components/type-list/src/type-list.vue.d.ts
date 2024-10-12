@@ -1,6 +1,6 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     width: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
         default: number;
     };
     showHeader: {
@@ -12,7 +12,7 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     headerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     showFooter: {
         type: BooleanConstructor;
@@ -23,7 +23,7 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     footerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     showOption: {
         type: BooleanConstructor;
@@ -42,7 +42,7 @@ declare const _default: import('vue').DefineComponent<{
         default: () => never[];
     };
     prop: {
-        type: import('vue').PropType<{
+        type: import("vue").PropType<{
             label?: string | undefined;
             value?: string | undefined;
             icon?: string | undefined;
@@ -54,7 +54,7 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     modelValue: {
-        type: import('vue').PropType<Record<string, any> | null>;
+        type: import("vue").PropType<Record<string, any> | null>;
         default: null;
     };
     emptyText: {
@@ -75,26 +75,26 @@ declare const _default: import('vue').DefineComponent<{
         default: number;
     };
 }, {
-    internalValue$: import('vue').WritableComputedRef<Record<string, any> | null>;
-    wrapStyle$: import('vue').ComputedRef<{
+    internalValue$: import("vue").WritableComputedRef<Record<string, any> | null>;
+    wrapStyle$: import("vue").ComputedRef<{
         width: string;
         minWidth: string;
     }>;
-    list$: import('vue').ComputedRef<any>;
-    prop$: import('vue').ComputedRef<{
+    list$: import("vue").ComputedRef<any>;
+    prop$: import("vue").ComputedRef<{
         label: string;
         value: string;
         icon: string;
         count: string;
     }>;
-    scrollbarRef: import('vue').Ref<any>;
+    scrollbarRef: import("vue").Ref<any>;
     onScroll: (detail: {
         scrollTop: number;
     }) => void;
     onClick: (element: any) => void;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, ("sort-start" | "sort-end" | "update:modelValue")[], "sort-start" | "sort-end" | "update:modelValue", import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("sort-start" | "sort-end" | "update:modelValue")[], "sort-start" | "sort-end" | "update:modelValue", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     width: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
         default: number;
     };
     showHeader: {
@@ -106,7 +106,7 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     headerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     showFooter: {
         type: BooleanConstructor;
@@ -117,7 +117,7 @@ declare const _default: import('vue').DefineComponent<{
         default: string;
     };
     footerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     showOption: {
         type: BooleanConstructor;
@@ -136,7 +136,7 @@ declare const _default: import('vue').DefineComponent<{
         default: () => never[];
     };
     prop: {
-        type: import('vue').PropType<{
+        type: import("vue").PropType<{
             label?: string | undefined;
             value?: string | undefined;
             icon?: string | undefined;
@@ -148,7 +148,7 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
     modelValue: {
-        type: import('vue').PropType<Record<string, any> | null>;
+        type: import("vue").PropType<Record<string, any> | null>;
         default: null;
     };
     emptyText: {

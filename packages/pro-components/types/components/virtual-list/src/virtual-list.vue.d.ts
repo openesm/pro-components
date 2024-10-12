@@ -1,6 +1,5 @@
-import { CSSProperties } from 'vue';
-
-declare const _default: import('vue').DefineComponent<{
+import type { CSSProperties } from 'vue';
+declare const _default: import("vue").DefineComponent<{
     height: {
         type: NumberConstructor;
         required: boolean;
@@ -29,7 +28,7 @@ declare const _default: import('vue').DefineComponent<{
         required: boolean;
     };
     items: {
-        type: import('vue').PropType<any[]>;
+        type: import("vue").PropType<any[]>;
         default: () => never[];
     };
 }, {
@@ -38,10 +37,10 @@ declare const _default: import('vue').DefineComponent<{
         end_idx: number;
         scroll_top: number;
     };
-    scroll_ref: import('vue').Ref<any>;
-    wrap_style$: import('vue').ComputedRef<CSSProperties>;
-    content_height$: import('vue').ComputedRef<string>;
-    visbile_list$: import('vue').ComputedRef<{
+    scroll_ref: import("vue").Ref<any>;
+    wrap_style$: import("vue").ComputedRef<CSSProperties>;
+    content_height$: import("vue").ComputedRef<string>;
+    visbile_list$: import("vue").ComputedRef<{
         data: any;
         style: {
             top: string;
@@ -50,7 +49,7 @@ declare const _default: import('vue').DefineComponent<{
     onScroll: ({ scrollTop: scroll_top }: {
         scrollTop: number;
     }) => void;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     height: {
         type: NumberConstructor;
         required: boolean;
@@ -79,7 +78,7 @@ declare const _default: import('vue').DefineComponent<{
         required: boolean;
     };
     items: {
-        type: import('vue').PropType<any[]>;
+        type: import("vue").PropType<any[]>;
         default: () => never[];
     };
 }>>, {

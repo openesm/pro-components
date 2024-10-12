@@ -1,5 +1,4 @@
-import { ExtractPublicPropTypes, PropType, CSSProperties, Component } from 'vue';
-
+import type { ExtractPublicPropTypes, PropType, CSSProperties, Component } from 'vue';
 type ActionItem = {
     key: string;
     icon?: Component;

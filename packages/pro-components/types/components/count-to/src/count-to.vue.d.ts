@@ -1,4 +1,4 @@
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     startVal: {
         type: NumberConstructor;
         default: number;
@@ -50,16 +50,16 @@ declare const _default: import('vue').DefineComponent<{
     start: () => void;
     pause: () => void;
     resume: () => void;
-    displayValue: import('vue').Ref<string>;
-    localStartVal: import('vue').Ref<number>;
-    localDuration: import('vue').Ref<number>;
-    printVal: import('vue').Ref<number | null>;
-    paused: import('vue').Ref<boolean>;
-    startTime: import('vue').Ref<number | null>;
-    timestamp: import('vue').Ref<number | null>;
-    remaining: import('vue').Ref<number | null>;
-    rAF: import('vue').Ref<Function | null>;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+    displayValue: import("vue").Ref<string>;
+    localStartVal: import("vue").Ref<number>;
+    localDuration: import("vue").Ref<number>;
+    printVal: import("vue").Ref<number | null>;
+    paused: import("vue").Ref<boolean>;
+    startTime: import("vue").Ref<number | null>;
+    timestamp: import("vue").Ref<number | null>;
+    remaining: import("vue").Ref<number | null>;
+    rAF: import("vue").Ref<Function | null>;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     startVal: {
         type: NumberConstructor;
         default: number;

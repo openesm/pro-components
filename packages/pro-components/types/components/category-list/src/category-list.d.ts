@@ -1,7 +1,6 @@
-import { ExtractPublicPropTypes, PropType, CSSProperties } from 'vue';
-import { EmptyProps, ScrollbarProps } from 'element-plus';
-import { SdCategoryListTypes } from './types';
-
+import type { ExtractPublicPropTypes, PropType, CSSProperties } from 'vue';
+import type { EmptyProps, ScrollbarProps } from 'element-plus';
+import type { SdCategoryListTypes } from './types';
 export declare const sdCategoryListProps: {
     autoActive: {
         type: BooleanConstructor;

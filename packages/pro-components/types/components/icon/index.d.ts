@@ -1,6 +1,6 @@
 export declare const SdIcon: ({
     new (...args: any[]): {
-        $: import('vue').ComponentInternalInstance;
+        $: import("vue").ComponentInternalInstance;
         $data: {};
         $props: Partial<{
             inline: boolean;
@@ -10,7 +10,7 @@ export declare const SdIcon: ({
             readonly color?: string | undefined;
             readonly name?: string | undefined;
             readonly prefix?: string | undefined;
-        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & Readonly<import('vue').ExtractPropTypes<{
+        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & Readonly<import("vue").ExtractPropTypes<{
             prefix: {
                 type: StringConstructor;
             };
@@ -34,13 +34,13 @@ export declare const SdIcon: ({
             [x: string]: unknown;
         };
         $slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
-        $root: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
-        $parent: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $root: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $parent: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
         $emit: (event: string, ...args: any[]) => void;
         $el: any;
-        $options: import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+        $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
             prefix: {
                 type: StringConstructor;
             };
@@ -57,9 +57,9 @@ export declare const SdIcon: ({
                 type: BooleanConstructor;
             };
         }>>, {
-            is_svg_icon$: import('vue').ComputedRef<boolean | undefined>;
-            svg_icon_name$: import('vue').ComputedRef<string | undefined>;
-        }, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, {
+            is_svg_icon$: import("vue").ComputedRef<boolean | undefined>;
+            svg_icon_name$: import("vue").ComputedRef<string | undefined>;
+        }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, {
             inline: boolean;
         }, {}, string, {}> & {
             beforeCreate?: ((() => void) | (() => void)[]) | undefined;
@@ -74,14 +74,14 @@ export declare const SdIcon: ({
             beforeUnmount?: ((() => void) | (() => void)[]) | undefined;
             destroyed?: ((() => void) | (() => void)[]) | undefined;
             unmounted?: ((() => void) | (() => void)[]) | undefined;
-            renderTracked?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            renderTriggered?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            errorCaptured?: (((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
+            renderTracked?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            renderTriggered?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            errorCaptured?: (((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
         };
         $forceUpdate: () => void;
-        $nextTick: typeof import('vue').nextTick;
-        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import('vue').WatchOptions<boolean> | undefined): import('vue').WatchStopHandle;
-    } & Readonly<import('vue').ExtractPropTypes<{
+        $nextTick: typeof import("vue").nextTick;
+        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import("vue").WatchOptions<boolean> | undefined): import("vue").WatchStopHandle;
+    } & Readonly<import("vue").ExtractPropTypes<{
         prefix: {
             type: StringConstructor;
         };
@@ -97,14 +97,14 @@ export declare const SdIcon: ({
         inline: {
             type: BooleanConstructor;
         };
-    }>> & import('vue').ShallowUnwrapRef<{
-        is_svg_icon$: import('vue').ComputedRef<boolean | undefined>;
-        svg_icon_name$: import('vue').ComputedRef<string | undefined>;
-    }> & {} & import('vue').ComponentCustomProperties & {};
+    }>> & import("vue").ShallowUnwrapRef<{
+        is_svg_icon$: import("vue").ComputedRef<boolean | undefined>;
+        svg_icon_name$: import("vue").ComputedRef<string | undefined>;
+    }> & {} & import("vue").ComponentCustomProperties & {};
     __isFragment?: undefined;
     __isTeleport?: undefined;
     __isSuspense?: undefined;
-} & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+} & import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
     prefix: {
         type: StringConstructor;
     };
@@ -121,9 +121,9 @@ export declare const SdIcon: ({
         type: BooleanConstructor;
     };
 }>>, {
-    is_svg_icon$: import('vue').ComputedRef<boolean | undefined>;
-    svg_icon_name$: import('vue').ComputedRef<string | undefined>;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, {
+    is_svg_icon$: import("vue").ComputedRef<boolean | undefined>;
+    svg_icon_name$: import("vue").ComputedRef<string | undefined>;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, {
     inline: boolean;
-}, {}, string, {}> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & import('vue').Plugin) & Record<string, any>;
+}, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & import("vue").Plugin) & Record<string, any>;
 export * from './src/icon';

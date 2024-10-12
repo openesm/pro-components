@@ -9,13 +9,13 @@ type SelectTimeGroup = {
     weekdays: number[];
     times: SelectTime[];
 };
-declare const _default: import('vue').DefineComponent<{
+declare const _default: import("vue").DefineComponent<{
     modelValue: {
         type: StringConstructor;
         default: string;
     };
 }, {
-    formRef: import('vue').Ref<any>;
+    formRef: import("vue").Ref<any>;
     WEEK_DAY: {
         id: number;
         label: string;
@@ -34,7 +34,7 @@ declare const _default: import('vue').DefineComponent<{
         }[];
         select_weekdays: number[];
     };
-    disabled_week_select$: import('vue').ComputedRef<boolean>;
+    disabled_week_select$: import("vue").ComputedRef<boolean>;
     validate: () => Promise<unknown>;
     validatorWeekdays: (_rule: any, value: any, callback: any) => void;
     validatorBeginTime: (time: SelectTime, timeIndex: number, times: SelectTime[], callback: any) => void;
@@ -46,7 +46,7 @@ declare const _default: import('vue').DefineComponent<{
     handleDelTimeGroup: (index: number) => void;
     handleAddTimeItem: (item: SelectTimeGroup) => void;
     handelDelTimeItem: (item: SelectTimeGroup, index: number) => void;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps, Readonly<import('vue').ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     modelValue: {
         type: StringConstructor;
         default: string;

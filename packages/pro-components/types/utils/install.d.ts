@@ -1,5 +1,4 @@
-import { AppContext, Plugin, Component } from 'vue';
-
+import type { AppContext, Plugin, Component } from 'vue';
 type SFCWithInstall<T> = T & Plugin;
 type SFCInstallWithContext<T> = SFCWithInstall<T> & {
     _context: AppContext | null;

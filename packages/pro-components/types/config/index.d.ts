@@ -1,7 +1,6 @@
-import { App } from 'vue';
-import { DeepPartial } from '../types';
-import { SdDatePickerProps } from '../components/date-picker/src/date-picker';
-
+import type { App } from 'vue';
+import type { DeepPartial } from '../types';
+import type { SdDatePickerProps } from '../components/date-picker/src/date-picker';
 declare const config: GlobalConfig;
 type ModalType = 'message-box' | 'dialog' | 'drawer';
 export interface GlobalConfig {

@@ -1,6 +1,5 @@
-import { SdTypeTreeTypes } from './types';
-import { ExtractPropTypes, PropType, CSSProperties } from 'vue';
-
+import type { SdTypeTreeTypes } from './types';
+import type { ExtractPropTypes, PropType, CSSProperties } from 'vue';
 export declare const sdTypeTreeProps: {
     width: {
         type: PropType<string | number>;

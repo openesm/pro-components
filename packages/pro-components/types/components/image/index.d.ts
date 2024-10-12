@@ -1,19 +1,19 @@
 export declare const SdImage: ({
     new (...args: any[]): {
-        $: import('vue').ComponentInternalInstance;
+        $: import("vue").ComponentInternalInstance;
         $data: {};
         $props: Partial<{
             circle: boolean;
-            infinite: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+            infinite: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
             src: string;
-            closeOnPressEscape: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+            closeOnPressEscape: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
             borderRadius: string | number;
             previewSrcList: string[];
             disabledPreview: boolean;
             placeholderIconSize: number;
             placeholderIconColor: string;
             errorIconSize: number;
-            fit: import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>;
+            fit: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>;
             hideOnClickModal: boolean;
             lazy: boolean;
             previewTeleported: boolean;
@@ -23,16 +23,16 @@ export declare const SdImage: ({
             maxScale: number;
         }> & Omit<{
             readonly circle: boolean;
-            readonly infinite: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+            readonly infinite: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
             readonly src: string;
-            readonly closeOnPressEscape: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+            readonly closeOnPressEscape: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
             readonly borderRadius: string | number;
             readonly previewSrcList: string[];
             readonly disabledPreview: boolean;
             readonly placeholderIconSize: number;
             readonly placeholderIconColor: string;
             readonly errorIconSize: number;
-            readonly fit: import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>;
+            readonly fit: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>;
             readonly hideOnClickModal: boolean;
             readonly lazy: boolean;
             readonly previewTeleported: boolean;
@@ -44,36 +44,36 @@ export declare const SdImage: ({
             readonly zIndex?: number | undefined;
             readonly width?: string | number | undefined;
             readonly minWidth?: string | number | undefined;
-            readonly loading?: import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "lazy" | "eager", unknown> | undefined;
+            readonly loading?: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "lazy" | "eager", unknown> | undefined;
             readonly minHeight?: string | number | undefined;
-            readonly placeholderStyle?: import('vue').CSSProperties | undefined;
-            readonly errorStyle?: import('vue').CSSProperties | undefined;
+            readonly placeholderStyle?: import("vue").CSSProperties | undefined;
+            readonly errorStyle?: import("vue").CSSProperties | undefined;
             readonly errorIconColor?: string | undefined;
-            readonly scrollContainer?: import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>;
+            readonly scrollContainer?: import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>;
             onClose?: (() => any) | undefined;
             onLoad?: ((evt: Event) => any) | undefined;
             onError?: ((evt: Event) => any) | undefined;
             onShow?: (() => any) | undefined;
             onSwitch?: ((val: number) => any) | undefined;
-        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & Readonly<import('vue').ExtractPropTypes<{
+        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & Readonly<import("vue").ExtractPropTypes<{
             width: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             height: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             minWidth: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             minHeight: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             circle: {
                 type: BooleanConstructor;
                 default: boolean;
             };
             borderRadius: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
                 default: number;
             };
             disabledPreview: {
@@ -81,7 +81,7 @@ export declare const SdImage: ({
                 default: boolean;
             };
             placeholderStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             placeholderIconSize: {
                 type: NumberConstructor;
@@ -92,7 +92,7 @@ export declare const SdImage: ({
                 default: string;
             };
             errorStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             errorIconSize: {
                 type: NumberConstructor;
@@ -103,7 +103,7 @@ export declare const SdImage: ({
             };
             fit: {
                 default: string;
-                type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
+                type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
                 required: false;
                 validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
@@ -112,34 +112,34 @@ export declare const SdImage: ({
                 default: boolean;
                 prototype: Boolean;
             };
-            src: import('element-plus/es/utils/index.mjs').EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
+            src: import("element-plus/es/utils/index.mjs").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
             loading: {
-                readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
+                readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
                 readonly required: false;
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
             };
             lazy: BooleanConstructor;
             scrollContainer: {
-                readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
+                readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
                 readonly required: false;
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
             };
-            previewSrcList: import('element-plus/es/utils/index.mjs').EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
+            previewSrcList: import("element-plus/es/utils/index.mjs").EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
             previewTeleported: BooleanConstructor;
             zIndex: {
-                readonly type: import('vue').PropType<number>;
+                readonly type: import("vue").PropType<number>;
                 readonly required: false;
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
             };
-            initialIndex: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
-            infinite: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-            closeOnPressEscape: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-            zoomRate: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
-            minScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
-            maxScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
+            initialIndex: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
+            infinite: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+            closeOnPressEscape: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+            zoomRate: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
+            minScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
+            maxScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
         }>> & {
             onClose?: (() => any) | undefined;
             onLoad?: ((evt: Event) => any) | undefined;
@@ -154,31 +154,31 @@ export declare const SdImage: ({
             [x: string]: unknown;
         };
         $slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
-        $root: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
-        $parent: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $root: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $parent: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
         $emit: ((event: "show") => void) & ((event: "switch", val: number) => void) & ((event: "error", evt: Event) => void) & ((event: "close") => void) & ((event: "load", evt: Event) => void);
         $el: any;
-        $options: import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+        $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
             width: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             height: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             minWidth: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             minHeight: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             circle: {
                 type: BooleanConstructor;
                 default: boolean;
             };
             borderRadius: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
                 default: number;
             };
             disabledPreview: {
@@ -186,7 +186,7 @@ export declare const SdImage: ({
                 default: boolean;
             };
             placeholderStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             placeholderIconSize: {
                 type: NumberConstructor;
@@ -197,7 +197,7 @@ export declare const SdImage: ({
                 default: string;
             };
             errorStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             errorIconSize: {
                 type: NumberConstructor;
@@ -208,7 +208,7 @@ export declare const SdImage: ({
             };
             fit: {
                 default: string;
-                type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
+                type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
                 required: false;
                 validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
@@ -217,34 +217,34 @@ export declare const SdImage: ({
                 default: boolean;
                 prototype: Boolean;
             };
-            src: import('element-plus/es/utils/index.mjs').EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
+            src: import("element-plus/es/utils/index.mjs").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
             loading: {
-                readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
+                readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
                 readonly required: false;
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
             };
             lazy: BooleanConstructor;
             scrollContainer: {
-                readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
+                readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
                 readonly required: false;
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
             };
-            previewSrcList: import('element-plus/es/utils/index.mjs').EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
+            previewSrcList: import("element-plus/es/utils/index.mjs").EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
             previewTeleported: BooleanConstructor;
             zIndex: {
-                readonly type: import('vue').PropType<number>;
+                readonly type: import("vue").PropType<number>;
                 readonly required: false;
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
             };
-            initialIndex: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
-            infinite: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-            closeOnPressEscape: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-            zoomRate: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
-            minScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
-            maxScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
+            initialIndex: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
+            infinite: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+            closeOnPressEscape: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+            zoomRate: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
+            minScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
+            maxScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
         }>> & {
             onClose?: (() => any) | undefined;
             onLoad?: ((evt: Event) => any) | undefined;
@@ -252,12 +252,12 @@ export declare const SdImage: ({
             onShow?: (() => any) | undefined;
             onSwitch?: ((val: number) => any) | undefined;
         }, {
-            image_props$: import('vue').ComputedRef<import('element-plus').ImageProps>;
-            image_style$: import('vue').ComputedRef<import('vue').CSSProperties>;
-            preview_src_list$: import('vue').ComputedRef<string[]>;
+            image_props$: import("vue").ComputedRef<import("element-plus").ImageProps>;
+            image_style$: import("vue").ComputedRef<import("vue").CSSProperties>;
+            preview_src_list$: import("vue").ComputedRef<string[]>;
             onLoad: (e: Event) => void;
             onError: (e: Event) => void;
-        }, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+        }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
             load: (evt: Event) => boolean;
             error: (evt: Event) => boolean;
             switch: (val: number) => boolean;
@@ -265,16 +265,16 @@ export declare const SdImage: ({
             show: () => boolean;
         }, string, {
             circle: boolean;
-            infinite: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+            infinite: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
             src: string;
-            closeOnPressEscape: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+            closeOnPressEscape: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
             borderRadius: string | number;
             previewSrcList: string[];
             disabledPreview: boolean;
             placeholderIconSize: number;
             placeholderIconColor: string;
             errorIconSize: number;
-            fit: import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>;
+            fit: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>;
             hideOnClickModal: boolean;
             lazy: boolean;
             previewTeleported: boolean;
@@ -295,32 +295,32 @@ export declare const SdImage: ({
             beforeUnmount?: ((() => void) | (() => void)[]) | undefined;
             destroyed?: ((() => void) | (() => void)[]) | undefined;
             unmounted?: ((() => void) | (() => void)[]) | undefined;
-            renderTracked?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            renderTriggered?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            errorCaptured?: (((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
+            renderTracked?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            renderTriggered?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            errorCaptured?: (((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
         };
         $forceUpdate: () => void;
-        $nextTick: typeof import('vue').nextTick;
-        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import('vue').WatchOptions<boolean> | undefined): import('vue').WatchStopHandle;
-    } & Readonly<import('vue').ExtractPropTypes<{
+        $nextTick: typeof import("vue").nextTick;
+        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import("vue").WatchOptions<boolean> | undefined): import("vue").WatchStopHandle;
+    } & Readonly<import("vue").ExtractPropTypes<{
         width: {
-            type: import('vue').PropType<string | number>;
+            type: import("vue").PropType<string | number>;
         };
         height: {
-            type: import('vue').PropType<string | number>;
+            type: import("vue").PropType<string | number>;
         };
         minWidth: {
-            type: import('vue').PropType<string | number>;
+            type: import("vue").PropType<string | number>;
         };
         minHeight: {
-            type: import('vue').PropType<string | number>;
+            type: import("vue").PropType<string | number>;
         };
         circle: {
             type: BooleanConstructor;
             default: boolean;
         };
         borderRadius: {
-            type: import('vue').PropType<string | number>;
+            type: import("vue").PropType<string | number>;
             default: number;
         };
         disabledPreview: {
@@ -328,7 +328,7 @@ export declare const SdImage: ({
             default: boolean;
         };
         placeholderStyle: {
-            type: import('vue').PropType<import('vue').CSSProperties>;
+            type: import("vue").PropType<import("vue").CSSProperties>;
         };
         placeholderIconSize: {
             type: NumberConstructor;
@@ -339,7 +339,7 @@ export declare const SdImage: ({
             default: string;
         };
         errorStyle: {
-            type: import('vue').PropType<import('vue').CSSProperties>;
+            type: import("vue").PropType<import("vue").CSSProperties>;
         };
         errorIconSize: {
             type: NumberConstructor;
@@ -350,7 +350,7 @@ export declare const SdImage: ({
         };
         fit: {
             default: string;
-            type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
+            type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
             required: false;
             validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
@@ -359,69 +359,69 @@ export declare const SdImage: ({
             default: boolean;
             prototype: Boolean;
         };
-        src: import('element-plus/es/utils/index.mjs').EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
+        src: import("element-plus/es/utils/index.mjs").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
         loading: {
-            readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
+            readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
             readonly required: false;
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
         };
         lazy: BooleanConstructor;
         scrollContainer: {
-            readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
+            readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
             readonly required: false;
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
         };
-        previewSrcList: import('element-plus/es/utils/index.mjs').EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
+        previewSrcList: import("element-plus/es/utils/index.mjs").EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
         previewTeleported: BooleanConstructor;
         zIndex: {
-            readonly type: import('vue').PropType<number>;
+            readonly type: import("vue").PropType<number>;
             readonly required: false;
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
         };
-        initialIndex: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
-        infinite: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-        closeOnPressEscape: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-        zoomRate: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
-        minScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
-        maxScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
+        initialIndex: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
+        infinite: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+        closeOnPressEscape: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+        zoomRate: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
+        minScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
+        maxScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
     }>> & {
         onClose?: (() => any) | undefined;
         onLoad?: ((evt: Event) => any) | undefined;
         onError?: ((evt: Event) => any) | undefined;
         onShow?: (() => any) | undefined;
         onSwitch?: ((val: number) => any) | undefined;
-    } & import('vue').ShallowUnwrapRef<{
-        image_props$: import('vue').ComputedRef<import('element-plus').ImageProps>;
-        image_style$: import('vue').ComputedRef<import('vue').CSSProperties>;
-        preview_src_list$: import('vue').ComputedRef<string[]>;
+    } & import("vue").ShallowUnwrapRef<{
+        image_props$: import("vue").ComputedRef<import("element-plus").ImageProps>;
+        image_style$: import("vue").ComputedRef<import("vue").CSSProperties>;
+        preview_src_list$: import("vue").ComputedRef<string[]>;
         onLoad: (e: Event) => void;
         onError: (e: Event) => void;
-    }> & {} & import('vue').ComponentCustomProperties & {};
+    }> & {} & import("vue").ComponentCustomProperties & {};
     __isFragment?: undefined;
     __isTeleport?: undefined;
     __isSuspense?: undefined;
-} & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+} & import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
     width: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     height: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     minWidth: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     minHeight: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     circle: {
         type: BooleanConstructor;
         default: boolean;
     };
     borderRadius: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
         default: number;
     };
     disabledPreview: {
@@ -429,7 +429,7 @@ export declare const SdImage: ({
         default: boolean;
     };
     placeholderStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     placeholderIconSize: {
         type: NumberConstructor;
@@ -440,7 +440,7 @@ export declare const SdImage: ({
         default: string;
     };
     errorStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     errorIconSize: {
         type: NumberConstructor;
@@ -451,7 +451,7 @@ export declare const SdImage: ({
     };
     fit: {
         default: string;
-        type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
+        type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>>;
         required: false;
         validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
@@ -460,34 +460,34 @@ export declare const SdImage: ({
         default: boolean;
         prototype: Boolean;
     };
-    src: import('element-plus/es/utils/index.mjs').EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
+    src: import("element-plus/es/utils/index.mjs").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
     loading: {
-        readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
+        readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "lazy" | "eager", unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
     lazy: BooleanConstructor;
     scrollContainer: {
-        readonly type: import('vue').PropType<import('element-plus/es/utils/index.mjs').EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
+        readonly type: import("vue").PropType<import("element-plus/es/utils/index.mjs").EpPropMergeType<(new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined) | ((new (...args: any[]) => string | HTMLElement) | (() => string | HTMLElement | undefined))[], unknown, unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
-    previewSrcList: import('element-plus/es/utils/index.mjs').EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
+    previewSrcList: import("element-plus/es/utils/index.mjs").EpPropFinalized<(new (...args: any[]) => string[]) | (() => string[]) | ((new (...args: any[]) => string[]) | (() => string[]))[], unknown, unknown, () => [], boolean>;
     previewTeleported: BooleanConstructor;
     zIndex: {
-        readonly type: import('vue').PropType<number>;
+        readonly type: import("vue").PropType<number>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
-    initialIndex: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
-    infinite: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-    closeOnPressEscape: import('element-plus/es/utils/index.mjs').EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-    zoomRate: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
-    minScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
-    maxScale: import('element-plus/es/utils/index.mjs').EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
+    initialIndex: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0, boolean>;
+    infinite: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+    closeOnPressEscape: import("element-plus/es/utils/index.mjs").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
+    zoomRate: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 1.2, boolean>;
+    minScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 0.2, boolean>;
+    maxScale: import("element-plus/es/utils/index.mjs").EpPropFinalized<NumberConstructor, unknown, unknown, 7, boolean>;
 }>> & {
     onClose?: (() => any) | undefined;
     onLoad?: ((evt: Event) => any) | undefined;
@@ -495,12 +495,12 @@ export declare const SdImage: ({
     onShow?: (() => any) | undefined;
     onSwitch?: ((val: number) => any) | undefined;
 }, {
-    image_props$: import('vue').ComputedRef<import('element-plus').ImageProps>;
-    image_style$: import('vue').ComputedRef<import('vue').CSSProperties>;
-    preview_src_list$: import('vue').ComputedRef<string[]>;
+    image_props$: import("vue").ComputedRef<import("element-plus").ImageProps>;
+    image_style$: import("vue").ComputedRef<import("vue").CSSProperties>;
+    preview_src_list$: import("vue").ComputedRef<string[]>;
     onLoad: (e: Event) => void;
     onError: (e: Event) => void;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     load: (evt: Event) => boolean;
     error: (evt: Event) => boolean;
     switch: (val: number) => boolean;
@@ -508,16 +508,16 @@ export declare const SdImage: ({
     show: () => boolean;
 }, string, {
     circle: boolean;
-    infinite: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+    infinite: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
     src: string;
-    closeOnPressEscape: import('element-plus/es/utils/index.mjs').EpPropMergeType<BooleanConstructor, unknown, unknown>;
+    closeOnPressEscape: import("element-plus/es/utils/index.mjs").EpPropMergeType<BooleanConstructor, unknown, unknown>;
     borderRadius: string | number;
     previewSrcList: string[];
     disabledPreview: boolean;
     placeholderIconSize: number;
     placeholderIconColor: string;
     errorIconSize: number;
-    fit: import('element-plus/es/utils/index.mjs').EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>;
+    fit: import("element-plus/es/utils/index.mjs").EpPropMergeType<StringConstructor, "" | "fill" | "none" | "contain" | "cover" | "scale-down", unknown>;
     hideOnClickModal: boolean;
     lazy: boolean;
     previewTeleported: boolean;
@@ -525,5 +525,5 @@ export declare const SdImage: ({
     zoomRate: number;
     minScale: number;
     maxScale: number;
-}, {}, string, {}> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & import('vue').Plugin) & Record<string, any>;
+}, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & import("vue").Plugin) & Record<string, any>;
 export * from './src/image';

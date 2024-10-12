@@ -1,6 +1,6 @@
 export declare const SdCard: ({
     new (...args: any[]): {
-        $: import('vue').ComponentInternalInstance;
+        $: import("vue").ComponentInternalInstance;
         $data: {};
         $props: Partial<{
             shadow: "never" | "hover" | "always";
@@ -13,13 +13,13 @@ export declare const SdCard: ({
             wrap: boolean;
             contentCenter: boolean;
             bodyClass: string;
-            bodyStyle: import('vue').CSSProperties;
+            bodyStyle: import("vue").CSSProperties;
             showEmpty: boolean;
             emptyText: string;
             actionsBordered: boolean;
             actions: {
                 key: string;
-                icon?: import('vue').Component | undefined;
+                icon?: import("vue").Component | undefined;
                 text?: string | undefined;
             }[];
         }> & Omit<{
@@ -34,26 +34,26 @@ export declare const SdCard: ({
             readonly wrap: boolean;
             readonly contentCenter: boolean;
             readonly bodyClass: string;
-            readonly bodyStyle: import('vue').CSSProperties;
+            readonly bodyStyle: import("vue").CSSProperties;
             readonly showEmpty: boolean;
             readonly emptyText: string;
             readonly actionsBordered: boolean;
             readonly actions: {
                 key: string;
-                icon?: import('vue').Component | undefined;
+                icon?: import("vue").Component | undefined;
                 text?: string | undefined;
             }[];
             readonly title?: string | undefined;
             readonly subTitle?: string | undefined;
             readonly tooltip?: string | undefined;
             readonly extra?: string | undefined;
-            readonly headerStyle?: import('vue').CSSProperties | undefined;
+            readonly headerStyle?: import("vue").CSSProperties | undefined;
             readonly gutter?: number | number[] | undefined;
             readonly split?: "horizontal" | "vertical" | undefined;
             readonly direction?: "row" | "column" | undefined;
             readonly height?: string | number | undefined;
             readonly maxHeight?: string | number | undefined;
-        } & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & Readonly<import('vue').ExtractPropTypes<{
+        } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & Readonly<import("vue").ExtractPropTypes<{
             title: {
                 type: StringConstructor;
             };
@@ -67,7 +67,7 @@ export declare const SdCard: ({
                 type: StringConstructor;
             };
             shadow: {
-                type: import('vue').PropType<"never" | "hover" | "always">;
+                type: import("vue").PropType<"never" | "hover" | "always">;
                 default: string;
             };
             headerClass: {
@@ -75,7 +75,7 @@ export declare const SdCard: ({
                 default: string;
             };
             headerStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             headerBordered: {
                 type: BooleanConstructor;
@@ -90,21 +90,21 @@ export declare const SdCard: ({
                 default: boolean;
             };
             gutter: {
-                type: import('vue').PropType<number | number[]>;
+                type: import("vue").PropType<number | number[]>;
             };
             group: {
                 type: BooleanConstructor;
                 default: boolean;
             };
             colSpan: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
                 default: number;
             };
             split: {
-                type: import('vue').PropType<"horizontal" | "vertical">;
+                type: import("vue").PropType<"horizontal" | "vertical">;
             };
             direction: {
-                type: import('vue').PropType<"row" | "column">;
+                type: import("vue").PropType<"row" | "column">;
             };
             wrap: {
                 type: BooleanConstructor;
@@ -115,17 +115,17 @@ export declare const SdCard: ({
                 default: boolean;
             };
             height: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             maxHeight: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             bodyClass: {
                 type: StringConstructor;
                 default: string;
             };
             bodyStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
                 default: () => {};
             };
             showEmpty: {
@@ -141,9 +141,9 @@ export declare const SdCard: ({
                 default: boolean;
             };
             actions: {
-                type: import('vue').PropType<{
+                type: import("vue").PropType<{
                     key: string;
-                    icon?: import('vue').Component | undefined;
+                    icon?: import("vue").Component | undefined;
                     text?: string | undefined;
                 }[]>;
                 default: () => never[];
@@ -158,13 +158,13 @@ export declare const SdCard: ({
             [x: string]: unknown;
         };
         $slots: Readonly<{
-            [name: string]: import('vue').Slot<any> | undefined;
+            [name: string]: import("vue").Slot<any> | undefined;
         }>;
-        $root: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
-        $parent: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $root: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
+        $parent: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null;
         $emit: (event: string, ...args: any[]) => void;
         $el: any;
-        $options: import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+        $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
             title: {
                 type: StringConstructor;
             };
@@ -178,7 +178,7 @@ export declare const SdCard: ({
                 type: StringConstructor;
             };
             shadow: {
-                type: import('vue').PropType<"never" | "hover" | "always">;
+                type: import("vue").PropType<"never" | "hover" | "always">;
                 default: string;
             };
             headerClass: {
@@ -186,7 +186,7 @@ export declare const SdCard: ({
                 default: string;
             };
             headerStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
             };
             headerBordered: {
                 type: BooleanConstructor;
@@ -201,21 +201,21 @@ export declare const SdCard: ({
                 default: boolean;
             };
             gutter: {
-                type: import('vue').PropType<number | number[]>;
+                type: import("vue").PropType<number | number[]>;
             };
             group: {
                 type: BooleanConstructor;
                 default: boolean;
             };
             colSpan: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
                 default: number;
             };
             split: {
-                type: import('vue').PropType<"horizontal" | "vertical">;
+                type: import("vue").PropType<"horizontal" | "vertical">;
             };
             direction: {
-                type: import('vue').PropType<"row" | "column">;
+                type: import("vue").PropType<"row" | "column">;
             };
             wrap: {
                 type: BooleanConstructor;
@@ -226,17 +226,17 @@ export declare const SdCard: ({
                 default: boolean;
             };
             height: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             maxHeight: {
-                type: import('vue').PropType<string | number>;
+                type: import("vue").PropType<string | number>;
             };
             bodyClass: {
                 type: StringConstructor;
                 default: string;
             };
             bodyStyle: {
-                type: import('vue').PropType<import('vue').CSSProperties>;
+                type: import("vue").PropType<import("vue").CSSProperties>;
                 default: () => {};
             };
             showEmpty: {
@@ -252,9 +252,9 @@ export declare const SdCard: ({
                 default: boolean;
             };
             actions: {
-                type: import('vue').PropType<{
+                type: import("vue").PropType<{
                     key: string;
-                    icon?: import('vue').Component | undefined;
+                    icon?: import("vue").Component | undefined;
                     text?: string | undefined;
                 }[]>;
                 default: () => never[];
@@ -262,15 +262,15 @@ export declare const SdCard: ({
         }>> & {
             [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
         }, {
-            childVNodes: import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
+            childVNodes: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
                 [key: string]: any;
             }>[];
-            isContainer$: import('vue').ComputedRef<boolean>;
-            bodyFlexDirection$: import('vue').ComputedRef<"row" | "column" | undefined>;
-            getBodyGutterStyle: () => import('vue').CSSProperties;
+            isContainer$: import("vue").ComputedRef<boolean>;
+            bodyFlexDirection$: import("vue").ComputedRef<"row" | "column" | undefined>;
+            getBodyGutterStyle: () => import("vue").CSSProperties;
             getCardColClass: (component: any, idx: number) => string[];
-            getCardColStyle: (component: any) => import('vue').CSSProperties;
-        }, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, {
+            getCardColStyle: (component: any) => import("vue").CSSProperties;
+        }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, {
             shadow: "never" | "hover" | "always";
             headerClass: string;
             headerBordered: boolean;
@@ -281,13 +281,13 @@ export declare const SdCard: ({
             wrap: boolean;
             contentCenter: boolean;
             bodyClass: string;
-            bodyStyle: import('vue').CSSProperties;
+            bodyStyle: import("vue").CSSProperties;
             showEmpty: boolean;
             emptyText: string;
             actionsBordered: boolean;
             actions: {
                 key: string;
-                icon?: import('vue').Component | undefined;
+                icon?: import("vue").Component | undefined;
                 text?: string | undefined;
             }[];
         }, {}, string, {}> & {
@@ -303,14 +303,14 @@ export declare const SdCard: ({
             beforeUnmount?: ((() => void) | (() => void)[]) | undefined;
             destroyed?: ((() => void) | (() => void)[]) | undefined;
             unmounted?: ((() => void) | (() => void)[]) | undefined;
-            renderTracked?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            renderTriggered?: (((e: import('vue').DebuggerEvent) => void) | ((e: import('vue').DebuggerEvent) => void)[]) | undefined;
-            errorCaptured?: (((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import('vue').ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import('vue').ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
+            renderTracked?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            renderTriggered?: (((e: import("vue").DebuggerEvent) => void) | ((e: import("vue").DebuggerEvent) => void)[]) | undefined;
+            errorCaptured?: (((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void) | ((err: unknown, instance: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}> | null, info: string) => boolean | void)[]) | undefined;
         };
         $forceUpdate: () => void;
-        $nextTick: typeof import('vue').nextTick;
-        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import('vue').WatchOptions<boolean> | undefined): import('vue').WatchStopHandle;
-    } & Readonly<import('vue').ExtractPropTypes<{
+        $nextTick: typeof import("vue").nextTick;
+        $watch<T extends string | ((...args: any) => any)>(source: T, cb: T extends (...args: any) => infer R ? (args_0: R, args_1: R) => any : (...args: any) => any, options?: import("vue").WatchOptions<boolean> | undefined): import("vue").WatchStopHandle;
+    } & Readonly<import("vue").ExtractPropTypes<{
         title: {
             type: StringConstructor;
         };
@@ -324,7 +324,7 @@ export declare const SdCard: ({
             type: StringConstructor;
         };
         shadow: {
-            type: import('vue').PropType<"never" | "hover" | "always">;
+            type: import("vue").PropType<"never" | "hover" | "always">;
             default: string;
         };
         headerClass: {
@@ -332,7 +332,7 @@ export declare const SdCard: ({
             default: string;
         };
         headerStyle: {
-            type: import('vue').PropType<import('vue').CSSProperties>;
+            type: import("vue").PropType<import("vue").CSSProperties>;
         };
         headerBordered: {
             type: BooleanConstructor;
@@ -347,21 +347,21 @@ export declare const SdCard: ({
             default: boolean;
         };
         gutter: {
-            type: import('vue').PropType<number | number[]>;
+            type: import("vue").PropType<number | number[]>;
         };
         group: {
             type: BooleanConstructor;
             default: boolean;
         };
         colSpan: {
-            type: import('vue').PropType<string | number>;
+            type: import("vue").PropType<string | number>;
             default: number;
         };
         split: {
-            type: import('vue').PropType<"horizontal" | "vertical">;
+            type: import("vue").PropType<"horizontal" | "vertical">;
         };
         direction: {
-            type: import('vue').PropType<"row" | "column">;
+            type: import("vue").PropType<"row" | "column">;
         };
         wrap: {
             type: BooleanConstructor;
@@ -372,17 +372,17 @@ export declare const SdCard: ({
             default: boolean;
         };
         height: {
-            type: import('vue').PropType<string | number>;
+            type: import("vue").PropType<string | number>;
         };
         maxHeight: {
-            type: import('vue').PropType<string | number>;
+            type: import("vue").PropType<string | number>;
         };
         bodyClass: {
             type: StringConstructor;
             default: string;
         };
         bodyStyle: {
-            type: import('vue').PropType<import('vue').CSSProperties>;
+            type: import("vue").PropType<import("vue").CSSProperties>;
             default: () => {};
         };
         showEmpty: {
@@ -398,29 +398,29 @@ export declare const SdCard: ({
             default: boolean;
         };
         actions: {
-            type: import('vue').PropType<{
+            type: import("vue").PropType<{
                 key: string;
-                icon?: import('vue').Component | undefined;
+                icon?: import("vue").Component | undefined;
                 text?: string | undefined;
             }[]>;
             default: () => never[];
         };
     }>> & {
         [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
-    } & import('vue').ShallowUnwrapRef<{
-        childVNodes: import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
+    } & import("vue").ShallowUnwrapRef<{
+        childVNodes: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
             [key: string]: any;
         }>[];
-        isContainer$: import('vue').ComputedRef<boolean>;
-        bodyFlexDirection$: import('vue').ComputedRef<"row" | "column" | undefined>;
-        getBodyGutterStyle: () => import('vue').CSSProperties;
+        isContainer$: import("vue").ComputedRef<boolean>;
+        bodyFlexDirection$: import("vue").ComputedRef<"row" | "column" | undefined>;
+        getBodyGutterStyle: () => import("vue").CSSProperties;
         getCardColClass: (component: any, idx: number) => string[];
-        getCardColStyle: (component: any) => import('vue').CSSProperties;
-    }> & {} & import('vue').ComponentCustomProperties & {};
+        getCardColStyle: (component: any) => import("vue").CSSProperties;
+    }> & {} & import("vue").ComponentCustomProperties & {};
     __isFragment?: undefined;
     __isTeleport?: undefined;
     __isSuspense?: undefined;
-} & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+} & import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
     title: {
         type: StringConstructor;
     };
@@ -434,7 +434,7 @@ export declare const SdCard: ({
         type: StringConstructor;
     };
     shadow: {
-        type: import('vue').PropType<"never" | "hover" | "always">;
+        type: import("vue").PropType<"never" | "hover" | "always">;
         default: string;
     };
     headerClass: {
@@ -442,7 +442,7 @@ export declare const SdCard: ({
         default: string;
     };
     headerStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
     };
     headerBordered: {
         type: BooleanConstructor;
@@ -457,21 +457,21 @@ export declare const SdCard: ({
         default: boolean;
     };
     gutter: {
-        type: import('vue').PropType<number | number[]>;
+        type: import("vue").PropType<number | number[]>;
     };
     group: {
         type: BooleanConstructor;
         default: boolean;
     };
     colSpan: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
         default: number;
     };
     split: {
-        type: import('vue').PropType<"horizontal" | "vertical">;
+        type: import("vue").PropType<"horizontal" | "vertical">;
     };
     direction: {
-        type: import('vue').PropType<"row" | "column">;
+        type: import("vue").PropType<"row" | "column">;
     };
     wrap: {
         type: BooleanConstructor;
@@ -482,17 +482,17 @@ export declare const SdCard: ({
         default: boolean;
     };
     height: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     maxHeight: {
-        type: import('vue').PropType<string | number>;
+        type: import("vue").PropType<string | number>;
     };
     bodyClass: {
         type: StringConstructor;
         default: string;
     };
     bodyStyle: {
-        type: import('vue').PropType<import('vue').CSSProperties>;
+        type: import("vue").PropType<import("vue").CSSProperties>;
         default: () => {};
     };
     showEmpty: {
@@ -508,9 +508,9 @@ export declare const SdCard: ({
         default: boolean;
     };
     actions: {
-        type: import('vue').PropType<{
+        type: import("vue").PropType<{
             key: string;
-            icon?: import('vue').Component | undefined;
+            icon?: import("vue").Component | undefined;
             text?: string | undefined;
         }[]>;
         default: () => never[];
@@ -518,15 +518,15 @@ export declare const SdCard: ({
 }>> & {
     [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
 }, {
-    childVNodes: import('vue').VNode<import('vue').RendererNode, import('vue').RendererElement, {
+    childVNodes: import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
         [key: string]: any;
     }>[];
-    isContainer$: import('vue').ComputedRef<boolean>;
-    bodyFlexDirection$: import('vue').ComputedRef<"row" | "column" | undefined>;
-    getBodyGutterStyle: () => import('vue').CSSProperties;
+    isContainer$: import("vue").ComputedRef<boolean>;
+    bodyFlexDirection$: import("vue").ComputedRef<"row" | "column" | undefined>;
+    getBodyGutterStyle: () => import("vue").CSSProperties;
     getCardColClass: (component: any, idx: number) => string[];
-    getCardColStyle: (component: any) => import('vue').CSSProperties;
-}, unknown, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, string[], string, {
+    getCardColStyle: (component: any) => import("vue").CSSProperties;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, string[], string, {
     shadow: "never" | "hover" | "always";
     headerClass: string;
     headerBordered: boolean;
@@ -537,14 +537,14 @@ export declare const SdCard: ({
     wrap: boolean;
     contentCenter: boolean;
     bodyClass: string;
-    bodyStyle: import('vue').CSSProperties;
+    bodyStyle: import("vue").CSSProperties;
     showEmpty: boolean;
     emptyText: string;
     actionsBordered: boolean;
     actions: {
         key: string;
-        icon?: import('vue').Component | undefined;
+        icon?: import("vue").Component | undefined;
         text?: string | undefined;
     }[];
-}, {}, string, {}> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & import('vue').Plugin) & Record<string, any>;
+}, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & import("vue").Plugin) & Record<string, any>;
 export * from './src/card';
