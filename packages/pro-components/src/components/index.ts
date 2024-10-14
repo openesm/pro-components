@@ -28,5 +28,6 @@ export * from './virtual-list'
 export * from './waterflow'
 export * from './week-time-select'
 
+export * from './echart'
 export * from './pro-form'
 export * from './pro-table'

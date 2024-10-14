@@ -6,8 +6,8 @@ export declare const SdWaterflow: ({
             column: number;
             list: import("./src/types").SdWaterflowTypes.WaterflowItem[];
             confirmButtonText: string;
-            delay: number;
             loadingText: string;
+            delay: number;
             nomoreText: string;
             nomore: boolean;
             distance: number;
@@ -15,8 +15,8 @@ export declare const SdWaterflow: ({
             readonly column: number;
             readonly list: import("./src/types").SdWaterflowTypes.WaterflowItem[];
             readonly confirmButtonText: string;
-            readonly delay: number;
             readonly loadingText: string;
+            readonly delay: number;
             readonly nomoreText: string;
             readonly nomore: boolean;
             readonly distance: number;
@@ -61,7 +61,7 @@ export declare const SdWaterflow: ({
                 type: NumberConstructor;
                 default: number;
             };
-        }>>, "column" | "list" | "confirmButtonText" | "delay" | "loadingText" | "nomoreText" | "nomore" | "distance">;
+        }>>, "column" | "list" | "confirmButtonText" | "loadingText" | "delay" | "nomoreText" | "nomore" | "distance">;
         $attrs: {
             [x: string]: unknown;
         };
@@ -120,8 +120,8 @@ export declare const SdWaterflow: ({
             column: number;
             list: import("./src/types").SdWaterflowTypes.WaterflowItem[];
             confirmButtonText: string;
-            delay: number;
             loadingText: string;
+            delay: number;
             nomoreText: string;
             nomore: boolean;
             distance: number;
@@ -233,8 +233,8 @@ export declare const SdWaterflow: ({
     column: number;
     list: import("./src/types").SdWaterflowTypes.WaterflowItem[];
     confirmButtonText: string;
-    delay: number;
     loadingText: string;
+    delay: number;
     nomoreText: string;
     nomore: boolean;
     distance: number;

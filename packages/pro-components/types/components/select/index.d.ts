@@ -60,8 +60,8 @@ export declare const SdSelect: ({
             readonly filterMethod?: Function | undefined;
             readonly modelValue?: string | number | boolean | unknown[] | Record<string, any> | undefined;
             readonly clearIcon?: string | import("vue").Component | undefined;
-            readonly suffixIcon?: string | import("vue").Component | undefined;
             readonly loadingText?: string | undefined;
+            readonly suffixIcon?: string | import("vue").Component | undefined;
             readonly noMatchText?: string | undefined;
             readonly noDataText?: string | undefined;
             readonly remoteMethod?: Function | undefined;
