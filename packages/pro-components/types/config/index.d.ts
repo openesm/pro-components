@@ -15,6 +15,11 @@ export interface GlobalConfig {
         onModalShow: (type: ModalType, opts: Record<string, any>) => void;
         onModalHide: (type: ModalType, opts: Record<string, any>) => void;
     };
+    plugins?: {
+        echarts?: {
+            require: () => Promise<any> | any;
+        };
+    };
 }
 export declare function setConfig(customConfig?: DeepPartialGlobalConfig): void;
 export type DeepPartialGlobalConfig = DeepPartial<GlobalConfig>;
