@@ -1,3 +1,6 @@
+## v0.0.5
+- 增加 sd-echart 组件，可通过配置异步加载 echarts 依赖
+
 ## v0.0.4 
 - 增加 pro-table 组件
 
