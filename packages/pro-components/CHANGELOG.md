@@ -1,3 +1,6 @@
+## v0.0.8
+- 增加 sd-webdatarocks 组件，可通过配置异步加载 webdatarocks 依赖
+
 ## v0.0.7
 - 增加 sd-wangeditor、sd-wangeditor-toolbar 组件，可通过配置异步加载 wangeditor 依赖
 
