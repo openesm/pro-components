@@ -1,3 +1,6 @@
+## v0.0.6
+- 增加 sd-jqxgrid、sd-jqxgrid-report 组件，可通过配置异步加载 jqxgrid 依赖
+
 ## v0.0.5
 - 增加 sd-echart 组件，可通过配置异步加载 echarts 依赖
 
