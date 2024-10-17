@@ -1438,15 +1438,15 @@ declare const _default: import("vue").DefineComponent<{
     showFooter: boolean;
     enableDargSort: boolean;
     border: boolean;
-    align: import("vxe-table").VxeTablePropTypes.Align;
     rows: any[];
+    rowHeight: number;
+    align: import("vxe-table").VxeTablePropTypes.Align;
     enableSeq: boolean;
     stripe: boolean;
     showOverflow: import("vxe-table").VxeTablePropTypes.ShowOverflow;
     showHeaderOverflow: import("vxe-table").VxeTablePropTypes.ShowOverflow;
     showFooterOverflow: import("vxe-table").VxeTablePropTypes.ShowOverflow;
     showAggregates: boolean;
-    rowHeight: number;
     enableTools: boolean;
     enableQuickSearch: boolean;
     enablePager: boolean;

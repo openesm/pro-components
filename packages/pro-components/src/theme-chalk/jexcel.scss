@@ -1,0 +1,51 @@
+.sd-jexcel {
+    padding-right: 0;
+}
+
+.sd-jexcel__loading-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--sd-jexcel-loading-height, 'auto');
+}
+
+.sd-jexcel__loading {
+    width: var(--sd-jexcel-loading-size, 30px);
+    height: var(--sd-jexcel-loading-size, 30px);
+    border: 2px solid var(--sd-jexcel-loading-color, #DCDFE6);
+    border-top-color: transparent;
+    border-radius: 100%;
+
+    animation: sd-jexcel-ani-circle infinite 0.75s linear;
+}
+
+@keyframes sd-jexcel-ani-circle {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+.sd-jexcel .jexcel {
+    border-left: none;
+    border-top: none;
+}
+
+.sd-jexcel .jcontextmenu {
+    display: none !important;
+}
+
+.sd-jexcel .jexcel > thead > tr > td {
+    height: var(--sd-jexcel-title-height, 'auto');
+}
+
+.sd-jexcel .jexcel > tbody > tr > td {
+    height: var(--sd-jexcel-row-height, 'auto')
+}
+
+.sd-jexcel .jexcel > tbody > tr > td.readonly {
+    background-color: var(--sd-jexcel-td-readonly-background, #f3f3f3);
+    color: var(--sd-jexcel-td-readonly-color, #303133);
+}
+
+.sd-jexcel .jexcel_content {
+    box-shadow: none !important;
+}

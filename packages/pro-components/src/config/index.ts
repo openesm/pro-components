@@ -71,6 +71,9 @@ export interface GlobalConfig {
         webdatarocks?: {
             require: () => Promise<any> | any
         }
+        jexcel?: {
+            require: () => Promise<any> | any
+        }
     }
 }
 

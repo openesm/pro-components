@@ -28,6 +28,9 @@ export interface GlobalConfig {
         webdatarocks?: {
             require: () => Promise<any> | any;
         };
+        jexcel?: {
+            require: () => Promise<any> | any;
+        };
     };
 }
 export declare function setConfig(customConfig?: DeepPartialGlobalConfig): void;

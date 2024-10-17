@@ -98,10 +98,10 @@ declare const _default: import("vue").DefineComponent<{
 }, {
     height: string;
     width: string;
+    rows: any[];
     filterable: boolean;
     columnsHeight: number;
     rowsHeight: number;
-    rows: any[];
     cols: SdJqxgridTypes.ColumnOptions[];
     enableSeq: boolean;
 }, {}>;
