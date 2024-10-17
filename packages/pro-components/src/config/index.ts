@@ -68,6 +68,9 @@ export interface GlobalConfig {
         wangeditor?: {
             require: () => Promise<any> | any
         }
+        webdatarocks?: {
+            require: () => Promise<any> | any
+        }
     }
 }
 

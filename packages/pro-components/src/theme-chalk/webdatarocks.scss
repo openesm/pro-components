@@ -1,0 +1,22 @@
+/** 隐藏工具栏 */
+#wdr-toolbar-wrapper {
+    height: 0 !important;
+    display: none !important;
+}
+
+/** 隐藏 LOGO */
+.wdr-credits {
+    display: none !important;
+}
+
+.sd-webdatarocks {
+    position: relative;
+}
+
+.sd-webdatarocks__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

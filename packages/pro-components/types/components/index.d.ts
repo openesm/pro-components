@@ -30,5 +30,6 @@ export * from './echart';
 export * from './jqxgrid';
 export * from './jqxgrid-report';
 export * from './wangeditor';
+export * from './webdatarocks';
 export * from './pro-form';
 export * from './pro-table';
