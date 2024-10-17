@@ -207,8 +207,8 @@ declare const _default: import("vue").DefineComponent<{
     placeholder: string;
     clearable: boolean;
     autocomplete: string;
-    automaticDropdown: boolean;
     filterable: boolean;
+    automaticDropdown: boolean;
     allowCreate: boolean;
     remote: boolean;
     multipleLimit: number;

@@ -1,0 +1,16 @@
+.sd-jqxgrid {
+    position: relative;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sd-jqxgrid__content {
+    flex: 1;
+}
+
+.sd-jqxgrid-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}

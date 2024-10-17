@@ -62,6 +62,9 @@ export interface GlobalConfig {
         echarts?: {
             require: () => Promise<any> | any
         }
+        jqxgrid?: {
+            require: () => Promise<any> | any
+        }
     }
 }
 

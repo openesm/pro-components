@@ -16,8 +16,8 @@ export declare const SdSelect: ({
             placeholder: string;
             clearable: boolean;
             autocomplete: string;
-            automaticDropdown: boolean;
             filterable: boolean;
+            automaticDropdown: boolean;
             allowCreate: boolean;
             remote: boolean;
             multipleLimit: number;
@@ -42,8 +42,8 @@ export declare const SdSelect: ({
             readonly placeholder: string;
             readonly clearable: boolean;
             readonly autocomplete: string;
-            readonly automaticDropdown: boolean;
             readonly filterable: boolean;
+            readonly automaticDropdown: boolean;
             readonly allowCreate: boolean;
             readonly remote: boolean;
             readonly multipleLimit: number;
@@ -160,7 +160,7 @@ export declare const SdSelect: ({
             };
         }>> & {
             [x: `on${Capitalize<string>}`]: ((...args: any[]) => any) | undefined;
-        }, "group" | "disabled" | "persistent" | "teleported" | "effect" | "popperClass" | "modelValue" | "options" | "loading" | "multiple" | "placeholder" | "clearable" | "autocomplete" | "automaticDropdown" | "filterable" | "allowCreate" | "remote" | "multipleLimit" | "defaultFirstOption" | "reserveKeyword" | "valueKey" | "collapseTags" | "fitInputWidth" | "tagType" | "popperAppendToBody">;
+        }, "group" | "disabled" | "persistent" | "teleported" | "effect" | "popperClass" | "modelValue" | "options" | "loading" | "multiple" | "placeholder" | "clearable" | "autocomplete" | "filterable" | "automaticDropdown" | "allowCreate" | "remote" | "multipleLimit" | "defaultFirstOption" | "reserveKeyword" | "valueKey" | "collapseTags" | "fitInputWidth" | "tagType" | "popperAppendToBody">;
         $attrs: {
             [x: string]: unknown;
         };
@@ -291,8 +291,8 @@ export declare const SdSelect: ({
             placeholder: string;
             clearable: boolean;
             autocomplete: string;
-            automaticDropdown: boolean;
             filterable: boolean;
+            automaticDropdown: boolean;
             allowCreate: boolean;
             remote: boolean;
             multipleLimit: number;
@@ -547,8 +547,8 @@ export declare const SdSelect: ({
     placeholder: string;
     clearable: boolean;
     autocomplete: string;
-    automaticDropdown: boolean;
     filterable: boolean;
+    automaticDropdown: boolean;
     allowCreate: boolean;
     remote: boolean;
     multipleLimit: number;

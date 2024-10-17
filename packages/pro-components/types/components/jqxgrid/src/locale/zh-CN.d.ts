@@ -1,0 +1,65 @@
+declare const _default: {
+    percentsymbol: string;
+    currencysymbol: string;
+    currencysymbolposition: string;
+    decimalseparator: string;
+    thousandsseparator: string;
+    sortascendingstring: string;
+    sortdescendingstring: string;
+    sortremovestring: string;
+    pagergotopagestring: string;
+    pagershowrowsstring: string;
+    pagerrangestring: string;
+    pagerpreviousbuttonstring: string;
+    pagernextbuttonstring: string;
+    pagerfirstbuttonstring: string;
+    pagerlastbuttonstring: string;
+    groupsheaderstring: string;
+    groupbystring: string;
+    groupremovestring: string;
+    filterclearstring: string;
+    filterstring: string;
+    filtershowrowstring: string;
+    filterorconditionstring: string;
+    filterandconditionstring: string;
+    filterselectallstring: string;
+    filterchoosestring: string;
+    filterselectstring: string;
+    filterstringcomparisonoperators: string[];
+    filternumericcomparisonoperators: string[];
+    filterdatecomparisonoperators: string[];
+    filterbooleancomparisonoperators: string[];
+    validationstring: string;
+    emptydatastring: string;
+    loadtext: string;
+    clearstring: string;
+    todaystring: string;
+    firstDay: number;
+    days: {
+        names: string[];
+        namesAbbr: string[];
+        namesShort: string[];
+    };
+    months: {
+        names: string[];
+        namesAbbr: string[];
+    };
+    AM: string[];
+    PM: string[];
+    eras: {
+        name: string;
+        start: null;
+        offset: number;
+    }[];
+    patterns: {
+        d: string;
+        D: string;
+        t: string;
+        T: string;
+        f: string;
+        F: string;
+        M: string;
+        Y: string;
+    };
+};
+export default _default;

@@ -1,0 +1,91 @@
+.sd-jqxgrid-report {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 15px;
+    bottom: 15px;
+    border-radius: 5px;
+
+    // 筛选条件区域
+    &__filter {
+        padding: 10px 10px 0 10px;
+        border-radius: 3px;
+        background-color: var(--white);
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        :deep(.el-form-item) {
+            margin-bottom: 10px;
+        }
+    }
+
+    // 工具栏区域
+    &__header {
+        display: flex;
+        background-color: var(--white);
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        border-radius: 3px 3px 0 0;
+
+        &.is-pivot {
+            margin-top: 0;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+    // 报表区域
+    &__grid-wrap {
+        position: relative;
+        flex: 1;
+        position: relative;
+        border-radius: 0 0 3px 3px;
+        background-color: var(--white);
+        box-sizing: border-box;
+
+        &-content {
+            position: absolute;
+            top: 0;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            box-sizing: border-box;
+        }
+    }
+
+    // 分页区域
+    &__pager-wrap {
+        background-color: var(--white);
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10px 10px;
+        box-sizing: border-box;
+        border-radius: 0 0 3px 3px;
+    }
+
+    // 汇总报表容器
+    &__summary-grid-wrap {
+        flex: 1;
+        padding: 0 10px 10px;
+        background-color: var(--white);
+    }
+}
+
+.sd-jqxgrid-report-summary-dialog__list-wrap {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+
+.sd-jqxgrid-report-summary-dialog__chart-wrap {
+    margin-top: 15px;
+    width: 620px;
+    height: 350px;
+    padding: 10px;
+}
