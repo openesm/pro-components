@@ -1,3 +1,6 @@
+## v0.0.7
+- 增加 sd-wangeditor、sd-wangeditor-toolbar 组件，可通过配置异步加载 wangeditor 依赖
+
 ## v0.0.6
 - 增加 sd-jqxgrid、sd-jqxgrid-report 组件，可通过配置异步加载 jqxgrid 依赖
 
