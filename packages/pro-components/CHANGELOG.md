@@ -1,3 +1,6 @@
+## v0.0.9
+- 增加 sd-jexcel 组件，可通过配置异步加载 jexcel 依赖
+
 ## v0.0.8
 - 增加 sd-webdatarocks 组件，可通过配置异步加载 webdatarocks 依赖
 
