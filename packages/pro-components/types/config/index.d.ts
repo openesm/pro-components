@@ -22,6 +22,9 @@ export interface GlobalConfig {
         jqxgrid?: {
             require: () => Promise<any> | any;
         };
+        wangeditor?: {
+            require: () => Promise<any> | any;
+        };
     };
 }
 export declare function setConfig(customConfig?: DeepPartialGlobalConfig): void;

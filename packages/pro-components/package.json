@@ -38,6 +38,7 @@
         "echarts"           : "5.3.3"
     },
     "dependencies": {
+        "@wangeditor/editor"     : "5.1.15",
         "@element-plus/icons-vue": "2.1.0",
         "async-validator"        : "4.2.5",
         "cropperjs"              : "1.6.2",
